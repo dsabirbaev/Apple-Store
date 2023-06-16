@@ -1,0 +1,202 @@
+
+
+#intro{
+    margin-top: 322px;
+    width: 100%;
+    max-height: 480px;
+    background-color: $intro-bg;
+    padding-top: 99px;
+    .intro-cards{
+        display: flex;
+        position: relative;
+        &__item{
+            width: 100%;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            column-gap: 48px;
+           
+            .intro-content{
+                padding-top: 20px;
+                &__img{
+                    margin-bottom: 18px;
+                }
+                &__text{
+                    @include font-style(48px, $ff-SFProDisplayRegular, $color-black);
+                    margin-bottom: 19px;
+                    span{
+                        font-size: 32px;
+                    }
+                }
+                &__btn{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    background-color: $prime;
+                    width: 160px;
+                    height: 56px;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: $light-prime;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+///////////// carousel settings///////////////
+
+.intro-cards .slick-slide {
+    display: flex;
+}
+
+/* arrows */
+.intro-cards .slick-arrow{
+	position: absolute;
+	top: 55%;
+	z-index: 10;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+    background-color: transparent;
+    transform: translateY(-50%);
+}
+.intro-cards .slick-arrow.slick-prev{
+   
+    top: 50%;
+	left: 0;
+	background-image: url('../assets/icons/arrow-left.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+   
+}
+.intro-cards .slick-arrow.slick-next{
+    
+    top: 50%;
+	right: 0;
+    background-image: url('../assets/icons/arrow-right.svg');
+	background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+////////////////////////////////////////////////////////////
+
+
+
+@media only screen and (max-width: 768px)  {
+    #intro{
+        margin-top: 44px;
+        width: 100%;
+        max-height: 480px;
+        background-color: $intro-bg;
+        padding-top: 40px;
+        overflow-y: hidden;
+        .intro-cards{
+            display: flex;
+            position: relative;
+            &__item{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                column-gap: 0px;
+                row-gap: 31px;
+                &--img{
+                    
+                    width: 269px;
+                    height: 280px;
+                }
+                .intro-content{
+                    order: -1;
+                    padding-top: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &__img{
+                        margin-bottom: 18px;
+                        width: 308px;
+                        height: 72px;
+                    }
+                    &__text{
+                        @include font-style(48px, $ff-SFProDisplayRegular, $color-black);
+                        margin-bottom: 16px;
+                        span{
+                            font-size: 32px;
+                        }
+                    }
+                    &__btn{
+                        @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                        background-color: $prime;
+                        width: 160px;
+                        height: 56px;
+                        border-radius: 8px;
+                       
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 320px)  {
+    #intro{
+        width: 100%;
+        max-height: 320px;
+        background-color: $intro-bg;
+        padding-top: 16px;
+        overflow-y: hidden;
+        .intro-cards{
+            display: flex;
+            position: relative;
+            &__item{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                column-gap: 0px;
+                row-gap: 16px;
+                &--img{
+                    
+                    width: 173px;
+                    height: 207px;
+                }
+                .intro-content{
+                    order: -1;
+                    padding-top: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &__img{
+                        margin-bottom: 9px;
+                        width: 192px;
+                        height: 45px;
+                    }
+                    &__text{
+                        @include font-style(32px, $ff-SFProDisplayRegular, $color-black);
+                        margin-bottom: 8px;
+                        span{
+                            font-size: 20px;
+                        }
+                    }
+                    &__btn{
+                        @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                        background-color: $prime;
+                        width: 160px;
+                        height: 40px;
+                        border-radius: 8px;
+                       
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,235 @@
+
+#our-advantages{
+    width: 100%;
+
+    .wrapper{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .our-advantages__title{
+        @include font-style(32px, $ff-SFProDisplayBold, $color-black);
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .our-advantages__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages-card{
+        display: flex;
+        flex-direction: column;
+        width: 228px;
+        height: 500px;
+        border-radius: 16px;
+        padding: 24px 8px 32px;
+        &__img{
+            align-self: center;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            &--body{
+                &-title{
+                    @include font-style(24px, $ff-SFProDisplayBold, $color-black);
+                    margin-bottom: 8px;
+                    text-align: center;
+                }
+                &-text{
+                    @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+                    line-height: 19.09px;
+                    text-align: center;
+                }
+            }
+            &--btn{
+                @include font-style(18px, $ff-SFProDisplayMedium, $prime);
+                padding: 17.5px 0px;
+                border: 1px solid $prime;
+                background-color: transparent;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: $prime;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+
+///////// gradient colors  //////////////////
+.gradient-discount{
+    background-image: $gradient-discount;
+}
+.gradient-delivery{
+    background-image: $gradient-delivery;
+}
+.gradient-wallet{
+    background-image: $gradient-wallet;
+}
+.gradient-building{
+    background-image: $gradient-building;
+}
+.gradient-approval{
+    background-image: $gradient-approval;
+}
+
+/////////////////////////////////////////////
+
+@media only screen and (max-width: 768px)  {
+    #our-advantages{
+        width: 100%;
+    
+        .wrapper{
+            
+            padding: 24px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .our-advantages__title{
+            @include font-style(32px, $ff-SFProDisplayBold, $color-black);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .our-advantages__cards{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+        .gradient-discount, .gradient-delivery, .gradient-wallet, .gradient-building, .gradient-approval {
+            background-image: none;
+        }
+        .advantages-card{
+            display: flex;
+            flex-direction: row;
+            column-gap: 26px;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            padding: 24px;
+            background-color: $light-grey;
+            &__img{
+                width: 64px;
+                height: 64px;
+                align-self: flex-start;
+            }
+            &__content{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                
+                &--body{
+                    max-width: 293px;
+                    &-title{
+                        @include font-style(24px, $ff-SFProDisplayBold, $color-black);
+                        margin-bottom: 8px;
+                        text-align: left;
+                    }
+                    &-text{
+                        @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+                        line-height: 19.09px;
+                        text-align: left;
+                    }
+                }
+                &--btn{
+                    @include font-style(18px, $ff-SFProDisplayMedium, $prime);
+                    padding: 17.5px 0px;
+                    min-width: 212px;
+                   
+                    border: 1px solid $prime;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: $prime;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px)  {
+    #our-advantages{
+        width: 100%;
+    
+        .wrapper{
+            
+            padding: 24px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .our-advantages__title{
+            @include font-style(24px, $ff-SFProDisplayBold, $color-black);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .our-advantages__cards{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+        .advantages-card{
+            display: flex;
+            flex-direction: row;
+            column-gap: 26px;
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            padding: 16px;
+            background-color: $light-grey;
+            position: relative;
+            &__img{
+                width: 32px;
+                height: 32px;
+                position: absolute;
+            }
+            &__content{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                &--body{
+                    max-width: 100%;
+                    &-title{
+                        @include font-style(20px, $ff-SFProDisplayBold, $color-black);
+                        margin-bottom: 12px;
+                        text-align: left;
+                        padding-left: 40px;
+                    }
+                    &-text{
+                        @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+                        line-height: 19.09px;
+                        text-align: left;
+                    }
+                }
+                &--btn{
+                    @include font-style(18px, $ff-SFProDisplayMedium, $prime);
+                    padding: 17.5px 0px;
+                    min-width: 212px;
+                   
+                    border: 1px solid $prime;
+                    background-color: transparent;
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: $prime;
+                        color: $color-white;
+                    }
+                    display: none;
+                }
+            }
+        }
+    }
+}

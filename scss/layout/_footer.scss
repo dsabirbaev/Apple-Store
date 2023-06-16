@@ -1,0 +1,408 @@
+
+footer{
+    width: 100%;
+    .wrapper{
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-up{
+        display: flex;
+        
+    }
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        margin-right: 48px;
+        &__img{
+            align-self: flex-start;
+            margin-bottom: 27px;
+        }
+        &__content{
+            &--right{
+                @include font-style(16px, $ff-SFProDisplayRegular, $footer-text);
+                span{
+                    display: block;
+                    margin-top: 8px;
+                }
+                margin-bottom: 24px;
+            }
+            &--text{
+                @include font-style(14px, $ff-SFProDisplayRegular, $color-grey);
+                max-width: 273px;
+                line-height: 16.71px;
+            }
+        }
+        
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-right: 40px;
+        &__link{
+            @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+        }
+    }
+    .footer-address{
+        display: flex;
+        flex-direction: column;
+        margin-left: 115px;
+        &__connection{
+            display: flex;
+            flex-direction: column;
+            &--tell{
+                @include font-style(40px, $ff-SFProDisplayMedium, $color-black);
+                margin-bottom: 4px;
+            }
+            &--text{
+                @include font-style(14px, $ff-SFProDisplayRegular, $dark-grey);
+                margin-bottom: 7px;
+                span{
+                    display: block;
+                }
+            }
+            &--socials{
+                display: flex;
+                align-items: center;
+                @include font-style(20px, $ff-SFProDisplayMedium, $prime);
+                margin-bottom: 36px;
+                cursor: pointer;
+                span{
+                    margin-right: 24px;
+                }
+                img:nth-child(3){
+                    margin: 0 8px;
+                }
+            }
+           
+
+        }
+        .order-ring{
+            display: none;
+        }
+        &__direction{
+            @include font-style(16px, $ff-SFProDisplayMedium, $color-black);
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+    }
+    .footer-bottom{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    footer{
+        width: 100%;
+        
+        .wrapper{
+            padding: 24px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .footer-up{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 32px;
+        }
+        .footer-left{
+            display: flex;
+            flex-direction: row;
+            column-gap: 24px;
+            margin-right: 0px;
+            margin-bottom: 32px;
+            &__img{
+                align-self: flex-start;
+                margin-bottom: 0px;
+            }
+            &__content{
+                &--right{
+                    @include font-style(16px, $ff-SFProDisplayRegular, $footer-text);
+                    span{
+                        display: block;
+                        margin-top: 8px;
+                    }
+                    margin-bottom: 8px;
+                }
+                &--text{
+                    @include font-style(14px, $ff-SFProDisplayRegular, $color-grey);
+                    max-width: 441px;
+                    line-height: 16.71px;
+                }
+            }
+            
+        }
+        .footer-list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-right: 0px;
+            margin-bottom: 32px;
+            &__link{
+                @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+            }
+        }
+        .footer-address{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            &__connection{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+                &--tell{
+                    @include font-style(32px, $ff-SFProDisplayMedium, $color-black);
+                    margin-bottom: 0px;
+                    margin-right: 16px;
+                }
+                &--text{
+                    @include font-style(14px, $ff-SFProDisplayRegular, $dark-grey);
+                    margin-bottom: 0px;
+                    margin-right: 100px;
+                    span{
+                        display: block;
+                    }
+                }
+                &--socials{
+                   
+                    display: flex;
+                    align-items: center;
+                    @include font-style(20px, $ff-SFProDisplayMedium, $prime);
+                    margin-bottom: 0px;
+                    cursor: pointer;
+                    span{
+                        margin-right: 24px;
+                        display: none;
+                    }
+                    img:nth-child(3){
+                        margin: 0 8px;
+                    }
+                }
+               
+            }
+            .order-ring{
+                display: block;
+                @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                margin-bottom: 33px;
+            }
+            &__direction{
+                @include font-style(16px, $ff-SFProDisplayMedium, $color-black);
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+            }
+        }
+
+        .footer-bottom{
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0px;
+            &__item{
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                cursor: pointer;
+                span{
+                    @include font-style(20px, $ff-SFProDisplayRegular, $footer-text);
+                }
+
+                &:hover:nth-child(1) span{
+                    color: $color-green;
+                }
+                &:hover:nth-child(2) span{
+                    color: $prime;
+                }
+                &:hover:nth-child(3) span{
+                    color: $prime;
+                }
+                &:hover:nth-child(4) span{
+                    color: $prime;
+                }
+                &:hover .catalog{
+                    fill: $color-green;
+                }
+                &:hover .bag{
+                    fill: $prime;
+                }
+                &:hover .love{
+                    stroke: $prime;
+                }
+                &:hover .rings{
+                    fill: $prime;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px)  {
+    footer{
+        width: 100%;
+        
+        .wrapper{
+            padding: 16px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .footer-up{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+        }
+        .footer-left{
+            display: flex;
+            flex-direction: row;
+            column-gap: 0px;
+            margin-right: 0px;
+            margin-bottom: 24px;
+            position: relative;
+            &__img{
+                align-self: flex-start;
+                margin-bottom: 0px;
+                width: 26px;
+                height: 30px;
+                position: absolute;
+                left: 40px;
+            }
+            &__content{
+                &--right{
+                    padding-left: 80px;
+                    @include font-style(14px, $ff-SFProDisplayRegular, $footer-text);
+                    span{
+                        display: block;
+                        margin-top: 4px;
+                    }
+                    margin-bottom: 4px;
+                }
+                &--text{
+                    padding-left: 10px;
+                    @include font-style(11px, $ff-SFProDisplayRegular, $color-grey);
+                    max-width: 441px;
+                    line-height: 13.13px;
+                    text-align: center;
+                }
+            }
+            
+        }
+        .footer-list{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            column-gap: 0px;
+            row-gap: 8px;
+            margin-right: 0px;
+            margin-bottom: 24px;
+            &__link{
+                @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+            }
+        }
+        .footer-address{
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+            &__connection{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                &--tell{
+                    @include font-style(24px, $ff-SFProDisplayMedium, $color-black);
+                    margin-bottom: 4px;
+                    margin-right: 0px;
+                }
+                &--text{
+                    @include font-style(12px, $ff-SFProDisplayRegular, $dark-grey);
+                    margin-bottom: 4px;
+                    margin-right: 0px;
+                    span{
+                        display: block;
+                    }
+                }
+                &--socials{
+                   
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                    margin-bottom: 0px;
+                    cursor: pointer;
+                    span{
+                        margin-right: 0px;
+                        margin-bottom: 16px;
+                        display: block;
+                        width: 100%;
+                    }
+                    img:nth-child(3){
+                        margin: 0 8px;
+                    }
+                }
+               
+            }
+            .order-ring{
+                display: none;
+                @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                margin-bottom: 33px;
+            }
+            &__direction{
+                @include font-style(16px, $ff-SFProDisplayMedium, $color-black);
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+            }
+        }
+
+        .footer-bottom{
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 0px;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                column-gap: 8px;
+                cursor: pointer;
+                span{
+                    @include font-style(13px, $ff-SFProDisplayRegular, $footer-text);
+                }
+                svg{
+                    width: 24px;
+                    height: 24px;
+                }
+                &:hover:nth-child(1) span{
+                    color: $color-green;
+                }
+                &:hover:nth-child(2) span{
+                    color: $prime;
+                }
+                &:hover:nth-child(3) span{
+                    color: $prime;
+                }
+                &:hover:nth-child(4) span{
+                    color: $prime;
+                }
+              
+                &:hover .catalog{
+                    fill: $color-green;
+                }
+                &:hover .bag{
+                    fill: $prime;
+                }
+                &:hover .love{
+                    stroke: $prime;
+                }
+                &:hover .rings{
+                    fill: $prime;
+                }
+            }
+        }
+    }
+}

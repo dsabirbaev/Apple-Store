@@ -1,0 +1,566 @@
+
+#top-iphone{
+    width: 100%;
+    .wrapper{
+        
+        padding-top: 24px;
+        padding-bottom: 40px;
+        .top-iphone__title{
+            @include font-style(48px, $ff-SFProDisplayMedium, $color-black);
+            text-align: center;
+            margin-bottom: 49px;
+        }
+        .top-iphone__subtitle{
+            @include font-style(24px, $ff-SFProDisplayMedium, $prime);
+            margin-bottom: 24px;
+        }
+        .top-iphone__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            &--up, &--middle, &--bottom{
+                display: flex;
+                column-gap: 24px;
+                &-left, &-right{
+                    display: flex;
+                    column-gap: 24px;
+                }
+            }
+            .iphone-card{
+                
+                padding: 16px 8px 24px;
+                width: 282px;
+                height: 611px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                &__header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    &--left{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                            margin-left: 8px;
+                        }
+                    }
+                    &--right{
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+                    }
+                }
+                &__body{
+                    margin-bottom: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    row-gap: 9px;
+                    &--title{
+                        @include font-style(24px, $ff-SFProDisplayMedium, $color-black);
+                        line-height: 29px;
+                        text-align: center;
+                    }
+                }
+                &__text{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 4px;
+                    @include font-style(16px, $ff-SFProDisplayMedium, $dark-grey);
+                   
+                    span:first-child{
+                        position: relative;
+                        padding-left: 20px;
+                        &::before{
+                            content: "";
+                            background-color: $color-green;
+                            border-radius: 50%;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                    &-extra{
+                        @include font-style(16px, $ff-SFProDisplayMedium, $dark-grey);
+                        padding-left: 30px;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            background-color: $prime;
+                            border-radius: 50%;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                  
+                }
+
+                &__price{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    @include font-style(32px, $ff-SFProDisplayMedium, $color-black);
+                    margin-bottom: 16px;
+                    span:first-child{
+                        color: $dark-grey;
+                        font-size: 20px;
+                        text-decoration: line-through;
+                    }
+                    &-extra{
+                        @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                        line-height: 16px;
+                        padding-left: 30px;
+                        margin-bottom: 22px;
+                    }
+                }
+                &__btn{
+                    background-color: $prime;
+                    border-radius: 8px;
+                    padding: 16px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 8px;
+                    transition: all 0.3s ease;
+                    margin-bottom: 8px;
+                    @include font-style(18px, $ff-SFProDisplayMedium, $color-white);
+                    &:hover{
+                        background-color: $btn-green;
+                    }
+                    &-message{
+                        background-color: transparent;
+                        color: $prime;
+                        border: 1px solid $prime;
+                        &:hover{
+                            color: $color-white;
+                            border-color: transparent;
+                        }
+                    }
+                }
+                &__footer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    @include font-style(16px, $ff-SFProDisplayMedium, $dark-grey);
+                    span:first-child{
+                        color: $prime;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 768px)  {
+    #top-iphone{
+        width: 100%;
+        .wrapper{
+            
+            padding-top: 24px;
+            padding-bottom: 40px;
+            .top-iphone__title{
+                @include font-style(40px, $ff-SFProDisplayMedium, $color-black);
+                text-align: center;
+                margin-bottom: 56px;
+            }
+            .top-iphone__subtitle{
+                @include font-style(24px, $ff-SFProDisplayMedium, $prime);
+                margin-bottom: 24px;
+            }
+            .top-iphone__cards{
+                display: flex;
+                flex-direction: column;
+                row-gap: 24px;
+                &--up, &--middle, &--bottom{
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 0px;
+                    row-gap: 40px;
+                    &-left, &-right{
+                        display: flex;
+                        justify-content: space-evenly;
+                    }
+                }
+                &--bottom{
+                    display: none;
+                }
+                .iphone-card{
+                    padding: 16px;
+                    width: 259px;
+                    height: 380px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    &__header{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 16px;
+                        &--left{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                                margin-left: 8px;
+                            }
+                        }
+                        &--right{
+                            display: flex;
+                            align-items: center;
+                            column-gap: 8px;
+                        }
+                    }
+                    &__body{
+                        margin-bottom: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        row-gap: 8px;
+                        &--title{
+                            order: 2;
+                            @include font-style(18px, $ff-SFProDisplayBold, $color-black);
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                        &--img{
+                            width: 140px;
+                            height: 152px;
+                        }
+                    }
+                    &__text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                        @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                       
+                        span:first-child{
+                            position: relative;
+                            padding-left: 20px;
+                            &::before{
+                                content: "";
+                                background-color: $color-green;
+                                border-radius: 50%;
+                                width: 12px;
+                                height: 12px;
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                            }
+                        }
+                        &-extra{
+                            @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                            padding-left: 30px;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                background-color: $prime;
+                                border-radius: 50%;
+                                width: 12px;
+                                height: 12px;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                      
+                    }
+    
+                    &__price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include font-style(20px, $ff-SFProDisplayMedium, $color-black);
+                        margin-bottom: 16px;
+                        &-extra{
+                            @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                            line-height: 16px;
+                            padding-left: 0px;
+                            margin-bottom: 22px;
+                            text-align: center;
+                        }
+                        span:first-child{
+                            color: $dark-grey;
+                            font-size: 16px;
+                            text-decoration: line-through;
+                        }
+                        span:last-child{
+                            background-color: $prime;
+                            color: $color-white;
+                            padding: 9px 40px 7px 9px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            position: relative;
+                            &:hover{
+                                background-color: $color-green
+                            }
+                            &::after{
+                                content: "";
+                                background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+                                background-repeat: no-repeat;
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                top: 8px;
+                                right: 8px;
+                            }
+                        }
+                    }
+                   
+                    &__btn{
+                        background-color: $prime;
+                        border-radius: 8px;
+                        padding: 16px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        column-gap: 8px;
+                        transition: all 0.3s ease;
+                        margin-bottom: 8px;
+                        @include font-style(18px, $ff-SFProDisplayMedium, $color-white);
+                        &:hover{
+                            background-color: $btn-green;
+                        }
+                        &-message{
+                            background-color: transparent;
+                            color: $prime;
+                            border: 1px solid $prime;
+                            &:hover{
+                                color: $color-white;
+                                border-color: transparent;
+                            }
+                        }
+                        display: none;
+                    }
+                    &__footer{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                        span:first-child{
+                            color: $prime;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+@media only screen and (max-width: 320px)  {
+    #top-iphone{
+        width: 100%;
+        .wrapper{
+            
+            padding-top: 16px;
+            padding-bottom: 24px;
+            .top-iphone__title{
+                @include font-style(24px, $ff-SFProDisplayMedium, $color-black);
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .top-iphone__subtitle{
+                @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                margin-bottom: 24px;
+            }
+            .top-iphone__cards{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 8px;
+                &--up, &--middle, &--bottom{
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 0px;
+                    row-gap: 8px;
+                    &-left, &-right{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        row-gap: 8px;
+                    }
+                }
+                &--bottom{
+                    display: none;
+                }
+                .iphone-card{
+                    padding: 16px;
+                    width: 259px;
+                    height: 380px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    &__header{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 16px;
+                        &--left{
+                            display: flex;
+                            align-items: center;
+                            span{
+                                @include font-style(16px, $ff-SFProDisplayMedium, $prime);
+                                margin-left: 8px;
+                            }
+                        }
+                        &--right{
+                            display: flex;
+                            align-items: center;
+                            column-gap: 8px;
+                        }
+                    }
+                    &__body{
+                        margin-bottom: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        row-gap: 8px;
+                        &--title{
+                            order: 2;
+                            @include font-style(18px, $ff-SFProDisplayBold, $color-black);
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                        &--img{
+                            width: 140px;
+                            height: 152px;
+                        }
+                    }
+                    &__text{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                        @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                       
+                        span:first-child{
+                            position: relative;
+                            padding-left: 20px;
+                            &::before{
+                                content: "";
+                                background-color: $color-green;
+                                border-radius: 50%;
+                                width: 12px;
+                                height: 12px;
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                            }
+                        }
+                        &-extra{
+                            @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                            padding-left: 30px;
+                            position: relative;
+                            &::before{
+                                content: "";
+                                background-color: $prime;
+                                border-radius: 50%;
+                                width: 12px;
+                                height: 12px;
+                                position: absolute;
+                                left: 0;
+                            }
+                        }
+                      
+                    }
+    
+                    &__price{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include font-style(20px, $ff-SFProDisplayMedium, $color-black);
+                        margin-bottom: 16px;
+                        &-extra{
+                            @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                            line-height: 16px;
+                            padding-left: 0px;
+                            margin-bottom: 22px;
+                            text-align: center;
+                        }
+                        span:first-child{
+                            color: $dark-grey;
+                            font-size: 16px;
+                            text-decoration: line-through;
+                        }
+                        span:last-child{
+                            background-color: $prime;
+                            color: $color-white;
+                            padding: 9px 40px 7px 9px;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            position: relative;
+                            &:hover{
+                                background-color: $color-green
+                            }
+                            &::after{
+                                content: "";
+                                background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+                                background-repeat: no-repeat;
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                top: 8px;
+                                right: 8px;
+                            }
+                        }
+                    }
+                   
+                    &__btn{
+                        background-color: $prime;
+                        border-radius: 8px;
+                        padding: 16px 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        column-gap: 8px;
+                        transition: all 0.3s ease;
+                        margin-bottom: 8px;
+                        @include font-style(18px, $ff-SFProDisplayMedium, $color-white);
+                        &:hover{
+                            background-color: $btn-green;
+                        }
+                        &-message{
+                            background-color: transparent;
+                            color: $prime;
+                            border: 1px solid $prime;
+                            &:hover{
+                                color: $color-white;
+                                border-color: transparent;
+                            }
+                        }
+                        display: none;
+                    }
+                    &__footer{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        @include font-style(14px, $ff-SFProDisplayMedium, $dark-grey);
+                        span:first-child{
+                            color: $prime;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,4490 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "SFProDisplay-Medium";
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url(../assets/fonts/SFProDisplay/SFProDisplay-Regular.OTF);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url(../assets/fonts/SFProDisplay/SFProDisplay-Medium.OTF);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url(../assets/fonts/SFProDisplay/SFProDisplay-Bold.OTF);
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0 5px;
+  }
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+header .nav-top__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+}
+header .nav-top__city .dropdown {
+  position: relative;
+}
+header .nav-top__city .dropdown .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0071E4;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  cursor: pointer;
+}
+header .nav-top__city .dropdown .select:hover {
+  background-color: #F9F9F9;
+}
+header .nav-top__city .dropdown .menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .nav-top__city .dropdown .menu li {
+  padding: 10px 0;
+}
+header .nav-top__city .dropdown .menu li:hover {
+  color: #0071E4;
+}
+header .nav-top__city .dropdown .menu-open {
+  display: block;
+}
+header .nav-top__city .dropdown .drop-arrow__rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+header .nav-top__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  cursor: pointer;
+}
+header .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 29px;
+  padding-bottom: 16px;
+}
+header .nav-menu__logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  top: -10px;
+}
+header .nav-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+header .nav-menu__list--item {
+  position: relative;
+}
+header .nav-menu__list--item-link {
+  font-size: 18px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .nav-menu__list--item:hover .nav-menu__list--item-link {
+  color: #0071E4;
+}
+header .nav-menu__list--item::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #0071E4;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .nav-menu__list--item:hover::after {
+  width: 100%;
+}
+header .nav-menu__list--item:hover .active-sale {
+  background-color: #0071E4;
+  color: #FFFFFF;
+}
+header .nav-menu__list--item:nth-child(2):hover::after {
+  width: 0;
+}
+header .nav-menu__list .active-sale {
+  background-color: #FDEFBF;
+  padding: 1px 8px 2px 28px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  position: relative;
+}
+header .nav-menu__list .active-sale::before {
+  content: "";
+  background-image: url(../assets/icons/fire.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6px;
+}
+header .nav-menu__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
+}
+header .nav-menu__call--link {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  position: relative;
+}
+header .nav-menu__call--link::before {
+  content: "";
+  background-image: url(../assets/icons/call.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -24px;
+}
+header .nav-menu__call--text {
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+}
+header .nav-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px 0;
+}
+header .nav-search__catalogue {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  border-radius: 16px;
+  background-color: #0071E4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 52px;
+  padding-right: 16px;
+  height: 56px;
+  position: relative;
+  cursor: pointer;
+}
+header .nav-search__catalogue::before {
+  content: "";
+  background-image: url(../assets/icons/dots.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+header .nav-search__input {
+  width: 594px;
+  border: 1px solid #B7B7B7;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+header .nav-search__input input {
+  width: 100%;
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  background-color: transparent;
+}
+header .nav-search__input input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+}
+header .nav-search__input input::-moz-placeholder {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+}
+header .nav-search__input input:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+}
+header .nav-search__input input::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+}
+header .nav-search__input input::placeholder {
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+}
+header .nav-search__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+header .nav-search__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  height: 56px;
+  border-radius: 16px;
+  padding-left: 59px;
+  padding-right: 31px;
+  background-color: #52D116;
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  position: relative;
+}
+header .nav-search__btn::before {
+  content: "";
+  background-image: url(../assets/icons/bag.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  left: 31px;
+}
+header .nav-search__btn span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  min-width: 34px;
+  min-height: 32px;
+  background: #52D116;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+header .nav-devices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 0px;
+}
+header .nav-devices__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+header .nav-devices__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  font-size: 20px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+header .nav-devices__list li:hover {
+  color: #0071E4;
+}
+header .nav-devices__list li:hover .svg-color {
+  fill: #0071E4;
+}
+header .nav-devices__list li:hover .svg-color-head {
+  stroke: #0071E4;
+}
+
+.svg-color, .svg-color-head {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper-responsive {
+  display: none;
+}
+
+.nav-tab__input--call-black {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header .wrapper {
+    display: none;
+  }
+  .wrapper-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 0px;
+  }
+  .wrapper-responsive .nav-tab {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+  }
+  .wrapper-responsive .nav-tab__logo {
+    width: 32px;
+    height: 32px;
+  }
+  .wrapper-responsive .nav-tab__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    width: 100%;
+  }
+  .wrapper-responsive .nav-tab__input--search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .wrapper-responsive .nav-tab__input--search input {
+    width: 100%;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--search input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--search input::-moz-placeholder {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--search input:-ms-input-placeholder {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--search input::-ms-input-placeholder {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--search input::placeholder {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+  }
+  .wrapper-responsive .nav-tab__input--call {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    position: relative;
+  }
+  .wrapper-responsive .nav-tab__input--call::before {
+    content: "";
+    background-image: url(../assets/icons/call.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -3px;
+    left: -28px;
+  }
+  .wrapper-responsive .nav-tab__input--menu {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .wrapper-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 0px;
+  }
+  .wrapper-responsive .nav-tab {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+  }
+  .wrapper-responsive .nav-tab__logo {
+    width: 32px;
+    height: 32px;
+  }
+  .wrapper-responsive .nav-tab__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .wrapper-responsive .nav-tab__input--search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  .wrapper-responsive .nav-tab__input--search input {
+    display: none;
+  }
+  .wrapper-responsive .nav-tab__input--call {
+    display: none;
+  }
+  .wrapper-responsive .nav-tab__input--call-black {
+    display: block;
+  }
+}
+#intro {
+  margin-top: 322px;
+  width: 100%;
+  max-height: 480px;
+  background-color: #D0EAFC;
+  padding-top: 99px;
+}
+#intro .intro-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+#intro .intro-cards__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
+}
+#intro .intro-cards__item .intro-content {
+  padding-top: 20px;
+}
+#intro .intro-cards__item .intro-content__img {
+  margin-bottom: 18px;
+}
+#intro .intro-cards__item .intro-content__text {
+  font-size: 48px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 19px;
+}
+#intro .intro-cards__item .intro-content__text span {
+  font-size: 32px;
+}
+#intro .intro-cards__item .intro-content__btn {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  background-color: #0071E4;
+  width: 160px;
+  height: 56px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#intro .intro-cards__item .intro-content__btn:hover {
+  background-color: #2A93FD;
+}
+
+.intro-cards .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* arrows */
+.intro-cards .slick-arrow {
+  position: absolute;
+  top: 55%;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.intro-cards .slick-arrow.slick-prev {
+  top: 50%;
+  left: 0;
+  background-image: url("../assets/icons/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.intro-cards .slick-arrow.slick-next {
+  top: 50%;
+  right: 0;
+  background-image: url("../assets/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #intro {
+    margin-top: 44px;
+    width: 100%;
+    max-height: 480px;
+    background-color: #D0EAFC;
+    padding-top: 40px;
+    overflow-y: hidden;
+  }
+  #intro .intro-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  #intro .intro-cards__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 31px;
+  }
+  #intro .intro-cards__item--img {
+    width: 269px;
+    height: 280px;
+  }
+  #intro .intro-cards__item .intro-content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro .intro-cards__item .intro-content__img {
+    margin-bottom: 18px;
+    width: 308px;
+    height: 72px;
+  }
+  #intro .intro-cards__item .intro-content__text {
+    font-size: 48px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #intro .intro-cards__item .intro-content__text span {
+    font-size: 32px;
+  }
+  #intro .intro-cards__item .intro-content__btn {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #0071E4;
+    width: 160px;
+    height: 56px;
+    border-radius: 8px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #intro {
+    width: 100%;
+    max-height: 320px;
+    background-color: #D0EAFC;
+    padding-top: 16px;
+    overflow-y: hidden;
+  }
+  #intro .intro-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  #intro .intro-cards__item {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 16px;
+  }
+  #intro .intro-cards__item--img {
+    width: 173px;
+    height: 207px;
+  }
+  #intro .intro-cards__item .intro-content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #intro .intro-cards__item .intro-content__img {
+    margin-bottom: 9px;
+    width: 192px;
+    height: 45px;
+  }
+  #intro .intro-cards__item .intro-content__text {
+    font-size: 32px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 8px;
+  }
+  #intro .intro-cards__item .intro-content__text span {
+    font-size: 20px;
+  }
+  #intro .intro-cards__item .intro-content__btn {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #0071E4;
+    width: 160px;
+    height: 40px;
+    border-radius: 8px;
+  }
+}
+#top-iphone {
+  width: 100%;
+}
+#top-iphone .wrapper {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+#top-iphone .wrapper .top-iphone__title {
+  font-size: 48px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 49px;
+}
+#top-iphone .wrapper .top-iphone__subtitle {
+  font-size: 24px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  margin-bottom: 24px;
+}
+#top-iphone .wrapper .top-iphone__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+#top-iphone .wrapper .top-iphone__cards--up, #top-iphone .wrapper .top-iphone__cards--middle, #top-iphone .wrapper .top-iphone__cards--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+#top-iphone .wrapper .top-iphone__cards--up-left, #top-iphone .wrapper .top-iphone__cards--up-right, #top-iphone .wrapper .top-iphone__cards--middle-left, #top-iphone .wrapper .top-iphone__cards--middle-right, #top-iphone .wrapper .top-iphone__cards--bottom-left, #top-iphone .wrapper .top-iphone__cards--bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card {
+  padding: 16px 8px 24px;
+  width: 282px;
+  height: 611px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__header--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__header--left span {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  margin-left: 8px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__header--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__body {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__body--title {
+  font-size: 24px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  line-height: 29px;
+  text-align: center;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child::before {
+  content: "";
+  background-color: #52D116;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+  padding-left: 30px;
+  position: relative;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra::before {
+  content: "";
+  background-color: #0071E4;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 32px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__price span:first-child {
+  color: #706E6E;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__price-extra {
+  font-size: 14px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+  line-height: 16px;
+  padding-left: 30px;
+  margin-bottom: 22px;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__btn {
+  background-color: #0071E4;
+  border-radius: 8px;
+  padding: 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__btn:hover {
+  background-color: #6FD91C;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message {
+  background-color: transparent;
+  color: #0071E4;
+  border: 1px solid #0071E4;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message:hover {
+  color: #FFFFFF;
+  border-color: transparent;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#top-iphone .wrapper .top-iphone__cards .iphone-card__footer span:first-child {
+  color: #0071E4;
+}
+
+@media only screen and (max-width: 768px) {
+  #top-iphone {
+    width: 100%;
+  }
+  #top-iphone .wrapper {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  #top-iphone .wrapper .top-iphone__title {
+    font-size: 40px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  #top-iphone .wrapper .top-iphone__subtitle {
+    font-size: 24px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 24px;
+  }
+  #top-iphone .wrapper .top-iphone__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  #top-iphone .wrapper .top-iphone__cards--up, #top-iphone .wrapper .top-iphone__cards--middle, #top-iphone .wrapper .top-iphone__cards--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 40px;
+  }
+  #top-iphone .wrapper .top-iphone__cards--up-left, #top-iphone .wrapper .top-iphone__cards--up-right, #top-iphone .wrapper .top-iphone__cards--middle-left, #top-iphone .wrapper .top-iphone__cards--middle-right, #top-iphone .wrapper .top-iphone__cards--bottom-left, #top-iphone .wrapper .top-iphone__cards--bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #top-iphone .wrapper .top-iphone__cards--bottom {
+    display: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card {
+    padding: 16px;
+    width: 259px;
+    height: 380px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--left span {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-left: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body--title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    line-height: 21px;
+    text-align: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body--img {
+    width: 140px;
+    height: 152px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child {
+    position: relative;
+    padding-left: 20px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child::before {
+    content: "";
+    background-color: #52D116;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra {
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    padding-left: 30px;
+    position: relative;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra::before {
+    content: "";
+    background-color: #0071E4;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price-extra {
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    line-height: 16px;
+    padding-left: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:first-child {
+    color: #706E6E;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child {
+    background-color: #0071E4;
+    color: #FFFFFF;
+    padding: 9px 40px 7px 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child:hover {
+    background-color: #52D116;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child::after {
+    content: "";
+    background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn {
+    background-color: #0071E4;
+    border-radius: 8px;
+    padding: 16px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    display: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn:hover {
+    background-color: #6FD91C;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message {
+    background-color: transparent;
+    color: #0071E4;
+    border: 1px solid #0071E4;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message:hover {
+    color: #FFFFFF;
+    border-color: transparent;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__footer span:first-child {
+    color: #0071E4;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #top-iphone {
+    width: 100%;
+  }
+  #top-iphone .wrapper {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  #top-iphone .wrapper .top-iphone__title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #top-iphone .wrapper .top-iphone__subtitle {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 24px;
+  }
+  #top-iphone .wrapper .top-iphone__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards--up, #top-iphone .wrapper .top-iphone__cards--middle, #top-iphone .wrapper .top-iphone__cards--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards--up-left, #top-iphone .wrapper .top-iphone__cards--up-right, #top-iphone .wrapper .top-iphone__cards--middle-left, #top-iphone .wrapper .top-iphone__cards--middle-right, #top-iphone .wrapper .top-iphone__cards--bottom-left, #top-iphone .wrapper .top-iphone__cards--bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards--bottom {
+    display: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card {
+    padding: 16px;
+    width: 259px;
+    height: 380px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--left span {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-left: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body--title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    line-height: 21px;
+    text-align: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__body--img {
+    width: 140px;
+    height: 152px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child {
+    position: relative;
+    padding-left: 20px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text span:first-child::before {
+    content: "";
+    background-color: #52D116;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra {
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    padding-left: 30px;
+    position: relative;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__text-extra::before {
+    content: "";
+    background-color: #0071E4;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price-extra {
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    line-height: 16px;
+    padding-left: 0px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:first-child {
+    color: #706E6E;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child {
+    background-color: #0071E4;
+    color: #FFFFFF;
+    padding: 9px 40px 7px 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child:hover {
+    background-color: #52D116;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__price span:last-child::after {
+    content: "";
+    background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn {
+    background-color: #0071E4;
+    border-radius: 8px;
+    padding: 16px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    display: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn:hover {
+    background-color: #6FD91C;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message {
+    background-color: transparent;
+    color: #0071E4;
+    border: 1px solid #0071E4;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__btn-message:hover {
+    color: #FFFFFF;
+    border-color: transparent;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #top-iphone .wrapper .top-iphone__cards .iphone-card__footer span:first-child {
+    color: #0071E4;
+  }
+}
+#lower-prices {
+  width: 100%;
+}
+#lower-prices .wrapper {
+  padding: 32px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#lower-prices .lower-prices__title {
+  font-size: 32px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 22px;
+}
+#lower-prices .lower-prices__list {
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #585656;
+  text-transform: none;
+  line-height: 19px;
+}
+#lower-prices .lower-prices__list li {
+  margin-bottom: 2px;
+}
+#lower-prices .lower-prices__list li:first-child {
+  margin-bottom: 15px;
+}
+#lower-prices .lower-prices__banner {
+  background-color: #000000;
+  height: 360px;
+}
+#lower-prices .lower-prices__banner .wrapper-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 88px;
+     -moz-column-gap: 88px;
+          column-gap: 88px;
+}
+#lower-prices .lower-prices__banner .lower-prices__banner--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#lower-prices .lower-prices__banner .lower-prices__banner--content-title {
+  font-size: 56px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+#lower-prices .lower-prices__banner .lower-prices__banner--content-text {
+  font-size: 24px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 24px;
+}
+#lower-prices .lower-prices__banner .lower-prices__banner--content-btn {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  background-color: #0071E4;
+  border-radius: 8px;
+  width: 160px;
+  height: 56px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#lower-prices .lower-prices__banner .lower-prices__banner--content-btn:hover {
+  background-color: #2A93FD;
+}
+
+@media only screen and (max-width: 768px) {
+  #lower-prices {
+    width: 100%;
+  }
+  #lower-prices .wrapper {
+    padding: 32px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lower-prices .lower-prices__title {
+    font-size: 32px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #lower-prices .lower-prices__list {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    line-height: 19px;
+  }
+  #lower-prices .lower-prices__list li {
+    margin-bottom: 2px;
+  }
+  #lower-prices .lower-prices__list li:first-child {
+    margin-bottom: 15px;
+  }
+  #lower-prices .lower-prices__banner {
+    background-color: #000000;
+    height: 276px;
+  }
+  #lower-prices .lower-prices__banner .wrapper-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 72px;
+       -moz-column-gap: 72px;
+            column-gap: 72px;
+  }
+  #lower-prices .lower-prices__banner .wrapper-banner img {
+    width: 150px;
+    height: 276px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-title {
+    font-size: 32px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 8px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-btn {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #0071E4;
+    border-radius: 8px;
+    width: 160px;
+    height: 56px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-btn:hover {
+    background-color: #2A93FD;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #lower-prices {
+    width: 100%;
+  }
+  #lower-prices .wrapper {
+    padding: 16px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lower-prices .lower-prices__title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  #lower-prices .lower-prices__list {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    line-height: 19px;
+  }
+  #lower-prices .lower-prices__list li {
+    margin-bottom: 2px;
+  }
+  #lower-prices .lower-prices__list li:first-child {
+    margin-bottom: 15px;
+  }
+  #lower-prices .lower-prices__banner {
+    background-color: #000000;
+    height: 163px;
+  }
+  #lower-prices .lower-prices__banner .wrapper-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+  #lower-prices .lower-prices__banner .wrapper-banner img {
+    width: 65px;
+    height: 163px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-title {
+    font-size: 20px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 4px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-btn {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #0071E4;
+    border-radius: 8px;
+    width: 160px;
+    height: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #lower-prices .lower-prices__banner .lower-prices__banner--content-btn:hover {
+    background-color: #2A93FD;
+  }
+}
+#new-iphone {
+  width: 100%;
+}
+#new-iphone .wrapper {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+#new-iphone .wrapper .new-iphone__subtitle {
+  font-size: 24px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  margin-bottom: 24px;
+}
+#new-iphone .wrapper .new-iphone__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+}
+#new-iphone .wrapper .new-iphone__cards--up, #new-iphone .wrapper .new-iphone__cards--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+#new-iphone .wrapper .new-iphone__cards--up-left, #new-iphone .wrapper .new-iphone__cards--up-right, #new-iphone .wrapper .new-iphone__cards--bottom-left, #new-iphone .wrapper .new-iphone__cards--bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card {
+  padding: 16px 8px 24px;
+  width: 282px;
+  height: 611px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__header--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__header--left span {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  margin-left: 8px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__header--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__body {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__body--title {
+  font-size: 24px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  line-height: 29px;
+  text-align: center;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child::before {
+  content: "";
+  background-color: #52D116;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 32px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__price span:first-child {
+  color: #706E6E;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__btn {
+  background-color: #0071E4;
+  border-radius: 8px;
+  padding: 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__btn:hover {
+  background-color: #6FD91C;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__footer span:first-child {
+  color: #0071E4;
+}
+
+@media only screen and (max-width: 768px) {
+  #new-iphone {
+    width: 100%;
+  }
+  #new-iphone .wrapper {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  #new-iphone .wrapper .new-iphone__subtitle {
+    font-size: 24px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 24px;
+  }
+  #new-iphone .wrapper .new-iphone__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+  #new-iphone .wrapper .new-iphone__cards--up, #new-iphone .wrapper .new-iphone__cards--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 40px;
+  }
+  #new-iphone .wrapper .new-iphone__cards--up-left, #new-iphone .wrapper .new-iphone__cards--up-right, #new-iphone .wrapper .new-iphone__cards--bottom-left, #new-iphone .wrapper .new-iphone__cards--bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card {
+    padding: 16px;
+    width: 259px;
+    height: 380px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--left span {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-left: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body--title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    line-height: 21px;
+    text-align: center;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body--img {
+    width: 140px;
+    height: 152px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child {
+    position: relative;
+    padding-left: 20px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child::before {
+    content: "";
+    background-color: #52D116;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:first-child {
+    color: #706E6E;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child {
+    background-color: #0071E4;
+    color: #FFFFFF;
+    padding: 9px 40px 7px 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child:hover {
+    background-color: #52D116;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child::after {
+    content: "";
+    background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__btn {
+    background-color: #0071E4;
+    border-radius: 8px;
+    padding: 16px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    display: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__btn:hover {
+    background-color: #6FD91C;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__footer span:first-child {
+    color: #0071E4;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #new-iphone {
+    width: 100%;
+  }
+  #new-iphone .wrapper {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  #new-iphone .wrapper .new-iphone__title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #new-iphone .wrapper .new-iphone__subtitle {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 24px;
+  }
+  #new-iphone .wrapper .new-iphone__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards--up, #new-iphone .wrapper .new-iphone__cards--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards--up-left, #new-iphone .wrapper .new-iphone__cards--up-right, #new-iphone .wrapper .new-iphone__cards--bottom-left, #new-iphone .wrapper .new-iphone__cards--bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card {
+    padding: 16px;
+    width: 259px;
+    height: 380px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--left span {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-left: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body--title {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    line-height: 21px;
+    text-align: center;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__body--img {
+    width: 140px;
+    height: 152px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child {
+    position: relative;
+    padding-left: 20px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__text span:first-child::before {
+    content: "";
+    background-color: #52D116;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 20px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:first-child {
+    color: #706E6E;
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child {
+    background-color: #0071E4;
+    color: #FFFFFF;
+    padding: 9px 40px 7px 9px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child:hover {
+    background-color: #52D116;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__price span:last-child::after {
+    content: "";
+    background-image: url(/assets/icons/iphone-card/cart-plus.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__btn {
+    background-color: #0071E4;
+    border-radius: 8px;
+    padding: 16px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    display: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__btn:hover {
+    background-color: #6FD91C;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #new-iphone .wrapper .new-iphone__cards .iphone-card__footer span:first-child {
+    color: #0071E4;
+  }
+}
+#our-advantages {
+  width: 100%;
+}
+#our-advantages .wrapper {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#our-advantages .our-advantages__title {
+  font-size: 32px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 24px;
+  text-align: center;
+}
+#our-advantages .our-advantages__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#our-advantages .advantages-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 228px;
+  height: 500px;
+  border-radius: 16px;
+  padding: 24px 8px 32px;
+}
+#our-advantages .advantages-card__img {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+#our-advantages .advantages-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+#our-advantages .advantages-card__content--body-title {
+  font-size: 24px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#our-advantages .advantages-card__content--body-text {
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #585656;
+  text-transform: none;
+  line-height: 19.09px;
+  text-align: center;
+}
+#our-advantages .advantages-card__content--btn {
+  font-size: 18px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  padding: 17.5px 0px;
+  border: 1px solid #0071E4;
+  background-color: transparent;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#our-advantages .advantages-card__content--btn:hover {
+  background-color: #0071E4;
+  color: #FFFFFF;
+}
+
+.gradient-discount {
+  background-image: linear-gradient(180.04deg, #FE94A6 0.04%, #F2F2F2 65.84%);
+}
+
+.gradient-delivery {
+  background-image: linear-gradient(180.04deg, #E685FF 0.04%, #F2F2F2 65.84%);
+}
+
+.gradient-wallet {
+  background-image: linear-gradient(180.04deg, #7DE9FF 0.04%, #F2F2F2 65.84%);
+}
+
+.gradient-building {
+  background-image: linear-gradient(180.04deg, #FFE685 0.04%, #F7F7F7 65.84%);
+}
+
+.gradient-approval {
+  background-image: linear-gradient(180.04deg, #ADFFC1 0.04%, #F2F2F2 65.84%);
+}
+
+@media only screen and (max-width: 768px) {
+  #our-advantages {
+    width: 100%;
+  }
+  #our-advantages .wrapper {
+    padding: 24px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-advantages .our-advantages__title {
+    font-size: 32px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  #our-advantages .our-advantages__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #our-advantages .gradient-discount, #our-advantages .gradient-delivery, #our-advantages .gradient-wallet, #our-advantages .gradient-building, #our-advantages .gradient-approval {
+    background-image: none;
+  }
+  #our-advantages .advantages-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 26px;
+       -moz-column-gap: 26px;
+            column-gap: 26px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: #F9F9F9;
+  }
+  #our-advantages .advantages-card__img {
+    width: 64px;
+    height: 64px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #our-advantages .advantages-card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  #our-advantages .advantages-card__content--body {
+    max-width: 293px;
+  }
+  #our-advantages .advantages-card__content--body-title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  #our-advantages .advantages-card__content--body-text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    line-height: 19.09px;
+    text-align: left;
+  }
+  #our-advantages .advantages-card__content--btn {
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    padding: 17.5px 0px;
+    min-width: 212px;
+    border: 1px solid #0071E4;
+    background-color: transparent;
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #our-advantages .advantages-card__content--btn:hover {
+    background-color: #0071E4;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #our-advantages {
+    width: 100%;
+  }
+  #our-advantages .wrapper {
+    padding: 24px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #our-advantages .our-advantages__title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  #our-advantages .our-advantages__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  #our-advantages .advantages-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 26px;
+       -moz-column-gap: 26px;
+            column-gap: 26px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #F9F9F9;
+    position: relative;
+  }
+  #our-advantages .advantages-card__img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+  }
+  #our-advantages .advantages-card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  #our-advantages .advantages-card__content--body {
+    max-width: 100%;
+  }
+  #our-advantages .advantages-card__content--body-title {
+    font-size: 20px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 12px;
+    text-align: left;
+    padding-left: 40px;
+  }
+  #our-advantages .advantages-card__content--body-text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    line-height: 19.09px;
+    text-align: left;
+  }
+  #our-advantages .advantages-card__content--btn {
+    font-size: 18px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    padding: 17.5px 0px;
+    min-width: 212px;
+    border: 1px solid #0071E4;
+    background-color: transparent;
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: none;
+  }
+  #our-advantages .advantages-card__content--btn:hover {
+    background-color: #0071E4;
+    color: #FFFFFF;
+  }
+}
+#subscribe {
+  background-color: #F9F9F9;
+  width: 100%;
+}
+#subscribe .wrapper {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+}
+#subscribe .subscribe-content__title {
+  font-size: 48px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  max-width: 421px;
+  margin-bottom: 8px;
+}
+#subscribe .subscribe-content__text {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #585656;
+  text-transform: none;
+  max-width: 454px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+#subscribe .subscribe-content__form {
+  padding: 16px 32px 32px;
+  border-radius: 16px;
+  background-image: linear-gradient(90.34deg, #F7355D 0.3%, #9747FF 101.33%);
+}
+#subscribe .subscribe-content__form--title {
+  font-size: 40px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+#subscribe .subscribe-content__form--text {
+  font-size: 20px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 16px;
+}
+#subscribe .subscribe-content__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+#subscribe .subscribe-content__form--input {
+  background-color: #FFFFFF;
+  max-width: 246px;
+  border-radius: 8px;
+  padding: 13px 24px 14px;
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--input::-webkit-input-placeholder {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--input::-moz-placeholder {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--input:-ms-input-placeholder {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--input::-ms-input-placeholder {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--input::placeholder {
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+}
+#subscribe .subscribe-content__form--btn {
+  border-radius: 8px;
+  min-width: 160px;
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #585656;
+  text-transform: none;
+  padding: 18.5px 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #E7E7E7;
+}
+#subscribe .subscribe-content__form--btn:hover {
+  background-color: #0071E4;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  #subscribe {
+    background-color: #F9F9F9;
+    width: 100%;
+  }
+  #subscribe .wrapper {
+    padding: 24px 0px 53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+  }
+  #subscribe .subscribe-img {
+    width: 224.56px;
+    height: 173px;
+  }
+  #subscribe .subscribe-content__title {
+    font-size: 32px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    max-width: 339px;
+    margin-bottom: 8px;
+  }
+  #subscribe .subscribe-content__text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    max-width: 300px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  #subscribe .subscribe-content__form {
+    padding: 0;
+    border-radius: 0;
+    background-image: none;
+  }
+  #subscribe .subscribe-content__form--header {
+    background-image: linear-gradient(90.34deg, #F7355D 0.3%, #9747FF 101.33%);
+    width: 279px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+  }
+  #subscribe .subscribe-content__form--title {
+    font-size: 20px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 4px;
+  }
+  #subscribe .subscribe-content__form--text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 0px;
+  }
+  #subscribe .subscribe-content__form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  #subscribe .subscribe-content__form--input {
+    background-color: #FFFFFF;
+    max-width: 246px;
+    border-radius: 8px;
+    padding: 13px 24px 14px;
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    border: 1px solid #DBDBDB;
+  }
+  #subscribe .subscribe-content__form--input::-webkit-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::-moz-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input:-ms-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::-ms-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--btn {
+    border-radius: 8px;
+    min-width: 160px;
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #585656;
+    text-transform: none;
+    padding: 18.5px 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #E7E7E7;
+  }
+  #subscribe .subscribe-content__form--btn:hover {
+    background-color: #0071E4;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #subscribe {
+    background-color: #F9F9F9;
+    width: 100%;
+  }
+  #subscribe .wrapper {
+    padding: 24px 0px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px;
+  }
+  #subscribe .subscribe-img {
+    width: 224.56px;
+    height: 173px;
+    display: none;
+  }
+  #subscribe .subscribe-content__title {
+    font-size: 24px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    max-width: 228px;
+    margin-bottom: 8px;
+  }
+  #subscribe .subscribe-content__text {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #585656;
+    text-transform: none;
+    max-width: 300px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+  #subscribe .subscribe-content__form {
+    padding: 0;
+    border-radius: 0;
+    background-image: none;
+  }
+  #subscribe .subscribe-content__form--header {
+    background-image: linear-gradient(90.34deg, #F7355D 0.3%, #9747FF 101.33%);
+    width: 288px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+  }
+  #subscribe .subscribe-content__form--title {
+    font-size: 16px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 4px;
+  }
+  #subscribe .subscribe-content__form--text {
+    font-size: 14px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #FFFFFF;
+    text-transform: none;
+    margin-bottom: 0px;
+  }
+  #subscribe .subscribe-content__form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 8px;
+  }
+  #subscribe .subscribe-content__form--input {
+    background-color: #FFFFFF;
+    max-width: 288px;
+    border-radius: 8px;
+    padding: 13px 24px 14px;
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    border: 1px solid #DBDBDB;
+  }
+  #subscribe .subscribe-content__form--input::-webkit-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::-moz-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input:-ms-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::-ms-input-placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--input::placeholder {
+    font-size: 24px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+  }
+  #subscribe .subscribe-content__form--btn {
+    border-radius: 8px;
+    min-width: 160px;
+    width: 288px;
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #585656;
+    text-transform: none;
+    padding: 18.5px 0px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #E7E7E7;
+  }
+  #subscribe .subscribe-content__form--btn:hover {
+    background-color: #0071E4;
+    color: #FFFFFF;
+  }
+}
+footer {
+  width: 100%;
+}
+footer .wrapper {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footer-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 48px;
+}
+footer .footer-left__img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 27px;
+}
+footer .footer-left__content--right {
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #878787;
+  text-transform: none;
+  margin-bottom: 24px;
+}
+footer .footer-left__content--right span {
+  display: block;
+  margin-top: 8px;
+}
+footer .footer-left__content--text {
+  font-size: 14px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #B7B7B7;
+  text-transform: none;
+  max-width: 273px;
+  line-height: 16.71px;
+}
+footer .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+  margin-right: 40px;
+}
+footer .footer-list__link {
+  font-size: 16px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+}
+footer .footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 115px;
+}
+footer .footer-address__connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footer-address__connection--tell {
+  font-size: 40px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+footer .footer-address__connection--text {
+  font-size: 14px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  color: #706E6E;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+footer .footer-address__connection--text span {
+  display: block;
+}
+footer .footer-address__connection--socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #0071E4;
+  text-transform: none;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+footer .footer-address__connection--socials span {
+  margin-right: 24px;
+}
+footer .footer-address__connection--socials img:nth-child(3) {
+  margin: 0 8px;
+}
+footer .footer-address .order-ring {
+  display: none;
+}
+footer .footer-address__direction {
+  font-size: 16px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #100E0E;
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+}
+footer .footer-bottom {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+  footer .wrapper {
+    padding: 24px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 32px;
+  }
+  footer .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+  footer .footer-left__img {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 0px;
+  }
+  footer .footer-left__content--right {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #878787;
+    text-transform: none;
+    margin-bottom: 8px;
+  }
+  footer .footer-left__content--right span {
+    display: block;
+    margin-top: 8px;
+  }
+  footer .footer-left__content--text {
+    font-size: 14px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+    max-width: 441px;
+    line-height: 16.71px;
+  }
+  footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+    row-gap: 16px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+  }
+  footer .footer-list__link {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+  }
+  footer .footer-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  footer .footer-address__connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 20px;
+  }
+  footer .footer-address__connection--tell {
+    font-size: 32px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 0px;
+    margin-right: 16px;
+  }
+  footer .footer-address__connection--text {
+    font-size: 14px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    margin-bottom: 0px;
+    margin-right: 100px;
+  }
+  footer .footer-address__connection--text span {
+    display: block;
+  }
+  footer .footer-address__connection--socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  footer .footer-address__connection--socials span {
+    margin-right: 24px;
+    display: none;
+  }
+  footer .footer-address__connection--socials img:nth-child(3) {
+    margin: 0 8px;
+  }
+  footer .footer-address .order-ring {
+    display: block;
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 33px;
+  }
+  footer .footer-address__direction {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+  footer .footer-bottom {
+    -webkit-box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 8px 0px;
+  }
+  footer .footer-bottom__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    cursor: pointer;
+  }
+  footer .footer-bottom__item span {
+    font-size: 20px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #878787;
+    text-transform: none;
+  }
+  footer .footer-bottom__item:hover:nth-child(1) span {
+    color: #52D116;
+  }
+  footer .footer-bottom__item:hover:nth-child(2) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover:nth-child(3) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover:nth-child(4) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover .catalog {
+    fill: #52D116;
+  }
+  footer .footer-bottom__item:hover .bag {
+    fill: #0071E4;
+  }
+  footer .footer-bottom__item:hover .love {
+    stroke: #0071E4;
+  }
+  footer .footer-bottom__item:hover .rings {
+    fill: #0071E4;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer {
+    width: 100%;
+  }
+  footer .wrapper {
+    padding: 16px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 24px;
+  }
+  footer .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  footer .footer-left__img {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 0px;
+    width: 26px;
+    height: 30px;
+    position: absolute;
+    left: 40px;
+  }
+  footer .footer-left__content--right {
+    padding-left: 80px;
+    font-size: 14px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #878787;
+    text-transform: none;
+    margin-bottom: 4px;
+  }
+  footer .footer-left__content--right span {
+    display: block;
+    margin-top: 4px;
+  }
+  footer .footer-left__content--text {
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #B7B7B7;
+    text-transform: none;
+    max-width: 441px;
+    line-height: 13.13px;
+    text-align: center;
+  }
+  footer .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 8px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+  footer .footer-list__link {
+    font-size: 16px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+  }
+  footer .footer-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+  }
+  footer .footer-address__connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  footer .footer-address__connection--tell {
+    font-size: 24px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    margin-bottom: 4px;
+    margin-right: 0px;
+  }
+  footer .footer-address__connection--text {
+    font-size: 12px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #706E6E;
+    text-transform: none;
+    margin-bottom: 4px;
+    margin-right: 0px;
+  }
+  footer .footer-address__connection--text span {
+    display: block;
+  }
+  footer .footer-address__connection--socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+  footer .footer-address__connection--socials span {
+    margin-right: 0px;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+  }
+  footer .footer-address__connection--socials img:nth-child(3) {
+    margin: 0 8px;
+  }
+  footer .footer-address .order-ring {
+    display: none;
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #0071E4;
+    text-transform: none;
+    margin-bottom: 33px;
+  }
+  footer .footer-address__direction {
+    font-size: 16px;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: #100E0E;
+    text-transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 8px;
+  }
+  footer .footer-bottom {
+    -webkit-box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4px 0px;
+  }
+  footer .footer-bottom__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+    cursor: pointer;
+  }
+  footer .footer-bottom__item span {
+    font-size: 13px;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    color: #878787;
+    text-transform: none;
+  }
+  footer .footer-bottom__item svg {
+    width: 24px;
+    height: 24px;
+  }
+  footer .footer-bottom__item:hover:nth-child(1) span {
+    color: #52D116;
+  }
+  footer .footer-bottom__item:hover:nth-child(2) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover:nth-child(3) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover:nth-child(4) span {
+    color: #0071E4;
+  }
+  footer .footer-bottom__item:hover .catalog {
+    fill: #52D116;
+  }
+  footer .footer-bottom__item:hover .bag {
+    fill: #0071E4;
+  }
+  footer .footer-bottom__item:hover .love {
+    stroke: #0071E4;
+  }
+  footer .footer-bottom__item:hover .rings {
+    fill: #0071E4;
+  }
+}/*# sourceMappingURL=main.css.map */

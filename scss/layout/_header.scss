@@ -1,0 +1,389 @@
+
+
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    backdrop-filter: blur(10px);
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        &__city{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+            .dropdown{
+                position: relative;
+                .select{
+                    display: flex;
+                    align-items: center;
+                    color: $prime;
+                    column-gap: 4px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $light-grey;
+                    }
+                }
+                .menu{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 50;
+                    cursor: pointer;
+                    background-color: $color-white;
+                    transition: all 0.3s ease;
+                    li{
+                        padding: 10px 0;
+                        &:hover{
+                            color: $prime;
+                        }
+                    }
+                    &-open{
+                        display: block;
+                    }
+                }
+                .drop-arrow__rotate{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__socials{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .nav-menu{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 29px;
+        padding-bottom: 16px;
+        &__logo{
+            align-self: flex-start;
+            position: relative;
+            top: -10px;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            &--item{
+                position: relative;
+                
+                &-link{
+                    @include font-style(18px, $ff-SFProDisplayRegular, $color-black);
+                    transition: all 0.3s ease;
+                }
+                &:hover .nav-menu__list--item-link{
+                    color: $prime;
+                }
+                &::after{
+                    content: " ";
+                    width: 0;
+                    height: 2px;
+                    background-color: $prime;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    transition: all 0.3s ease;
+                }
+                &:hover::after{
+                    width: 100%
+                }
+                &:hover .active-sale {
+                    background-color: $prime;
+                    color: $color-white;
+                }
+                &:nth-child(2):hover::after{
+                    width: 0;
+                }
+            }
+            .active-sale{
+                background-color: $active-sale;
+                padding: 1px 8px 2px 28px;
+                border-radius: 8px;
+                transition: all 0.3 ease;
+                position: relative;
+                &::before{
+                    content: "";
+                    background-image: url(../assets/icons/fire.svg);
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    left: 6px;
+                }
+            }
+        }
+        &__call{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            row-gap: 4px;
+            
+            &--link{
+              
+                
+                @include font-style(20px, $ff-SFProDisplayRegular, $color-black);
+                position: relative;
+                &::before{
+                    content: "";
+                    background-image: url(../assets/icons/call.svg);
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: -24px;
+                }
+            }
+            &--text{
+                @include font-style(16px, $ff-SFProDisplayRegular, $prime);
+            }
+        }
+    }
+
+    .nav-search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 0;
+        &__catalogue{
+            @include font-style(20px, $ff-SFProDisplayRegular, $color-white);
+            border-radius: 16px;
+            background-color: $prime;
+            display: flex;
+            align-items: center;
+            padding-left: 52px;
+            padding-right: 16px;
+            height: 56px;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                content: "";
+                background-image: url(../assets/icons/dots.svg);
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 12px;
+                left: 16px;
+            }
+        }
+        &__input{
+            width: 594px;
+            border: 1px solid $color-grey;
+            border-radius: 8px;
+            height: 56px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            input{
+                width: 100%;
+                @include font-style(20px, $ff-SFProDisplayRegular, $color-black);
+                background-color: transparent;
+                &::placeholder{
+                    @include font-style(20px, $ff-SFProDisplayRegular, $color-grey);
+                }
+            }
+        }
+        &__icons{
+            display: flex;
+            column-gap: 24px;
+        }
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 4px;
+            height: 56px;
+            border-radius: 16px;
+            padding-left: 59px;
+            padding-right: 31px;
+            background-color: $color-green;
+            @include font-style(20px, $ff-SFProDisplayRegular, $color-white);
+            position: relative;
+            &::before{
+                content: "";
+                background-image: url(../assets/icons/bag.svg);
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 16px;
+                left: 31px;
+            }
+            span{
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include font-style(20px, $ff-SFProDisplayBold, $color-white);
+                min-width: 34px;
+                min-height: 32px;
+                background: $color-green;
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 32px;
+            }
+        }
+    }
+    .nav-devices{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0px;
+        &__list{
+            display: flex;
+            align-items: center;
+            column-gap: 16px;
+            li{
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                @include font-style(20px, $ff-SFProDisplayRegular, $color-black);
+                transition: all 0.3s ease;
+                cursor: pointer;
+                &:hover{
+                    color: $prime;
+                }
+                &:hover .svg-color{
+                    fill: $prime;
+                }
+                &:hover .svg-color-head{
+                    stroke: $prime;
+                }
+            }
+        }
+    }
+}
+
+.svg-color, .svg-color-head {
+    transition: all 0.3s ease;
+}
+
+.wrapper-responsive{
+    display: none;
+}
+.nav-tab__input--call-black{
+    display: none;
+}
+@media only screen and (max-width: 768px)  {
+    header{
+        .wrapper{
+            display: none;
+        }
+    }
+    .wrapper-responsive{
+        display: flex;
+        padding: 4px 0px;
+        .nav-tab{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            column-gap: 32px;
+            &__logo{
+                width: 32px;
+                height: 32px;
+            }
+            &__input{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 40px;
+                width: 100%;
+                &--search{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 8px;
+                    flex-grow: 1;
+                    input{
+                        width: 100%;
+                        background-color: transparent;
+                        @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+                        &::placeholder{
+                            @include font-style(16px, $ff-SFProDisplayRegular, $color-grey);
+                        }
+                    }
+                }
+                &--call{
+                    @include font-style(16px, $ff-SFProDisplayRegular, $color-black);
+                    position: relative;
+
+                    &::before{
+                        content: "";
+                        background-image: url(../assets/icons/call.svg);
+                        background-repeat: no-repeat;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        top: -3px;
+                        left: -28px;
+                    }
+                }
+                &--menu{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 320px)  {
+
+    .wrapper-responsive{
+        display: flex;
+        padding: 4px 0px;
+        .nav-tab{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 0px;
+            
+            &__logo{
+                width: 32px;
+                height: 32px;
+            }
+            &__input{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 32px;
+                width: fit-content;
+                &--search{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    column-gap: 8px;
+                    flex-grow: 0;
+                    input{
+                       display: none;
+                    }
+                }
+                &--call{
+                    display: none;
+                }
+                &--call-black{
+                    display: block;
+                }
+            }
+        }
+    }
+
+}

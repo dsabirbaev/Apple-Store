@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <!-- device theme color -->
+    <meta name="theme-color" content="#0071E4">
+    <!-- favicon.icon -->
+    <link rel="icon" href="./assets/icons/logo.svg">
+     <!-- slick slider -->
+     <link rel="stylesheet" href="./library/slick-1.8.1/slick/slick.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.min.css">
+   
+</head>
+
+<body>
+    <!-- header section started -->
+    <header>
+        <div class="container">
+            <div class="wrapper">
+                <nav class="nav-top">
+                    <div class="nav-top__city">
+                        <p class="nav-top__city--select">Ваш город:</p>
+    
+                        <div class="dropdown">
+                            <div class="select">
+                                <span class="selected">Москва</span>
+                                <img class="drop-arrow" src="./assets/icons/arrow-down.svg" alt="arrow-down">
+                            </div>
+                            <ul class="menu">
+                                <li class="active">Москва</li>
+                                <li>Ташкент</li>
+                                <li>Нукус</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-top__socials">
+                        <img src="./assets/icons/socials/whatsapp.svg" alt="whatsapp">
+                        <img src="./assets/icons/socials/telegram.svg" alt="telegram">
+                        <img src="./assets/icons/socials/vk.svg" alt="vk">
+                    </div>
+                </nav>
+                <nav class="nav-menu">
+                    <a class="nav-menu__logo" href="#"><img  src="./assets/icons/logo.svg" alt="logo"></a>
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Весь каталог</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link active-sale" href="#">Акции</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Гарантия</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Политика возврата</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Кредит</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Доставка и оплата</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Отзывы</a></li>
+                        <li class="nav-menu__list--item"><a class="nav-menu__list--item-link" href="#">Контакты</a></li>
+                    </ul>
+                    <div class="nav-menu__call">
+                        <a class="nav-menu__call--link" href="tel:+78125619662">+7 812 561 96 62</a>
+                        <p class="nav-menu__call--text">Вам перезвонить?</p>
+                    </div>
+                </nav>
+                <nav class="nav-search">
+                    <p class="nav-search__catalogue">
+                        Каталог товаров
+                    </p>
+                    <div class="nav-search__input">
+                        <img src="./assets/icons/search.svg" alt="search">
+                        <input type="text" placeholder="Поиск по каталогу товаров">
+                    </div>
+                    <div class="nav-search__icons">
+                        <img src="./assets/icons/love.svg" alt="love">
+                        <img src="./assets/icons/ring.svg" alt="ring">
+                    </div>
+                    
+                    <button class="nav-search__btn">в корзине <span>1</span></button>
+                    
+                </nav>
+                <nav class="nav-devices">
+                    <ul class="nav-devices__list">
+                        <li><span>
+                                <svg  width="25" height="40" viewBox="0 0 25 40" fill="" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color" d="M5 2C3.34315 2 2 3.34315 2 5V35C2 36.6569 3.34315 38 5 38H19.0227C20.6796 38 22.0227 36.6569 22.0227 35V5C22.0227 3.34315 20.6796 2 19.0227 2H19C18.4477 2 18 2.44772 18 3C18 4.65685 16.6569 6 15 6H9C7.34315 6 6 4.65685 6 3C6 2.44772 5.55228 2 5 2ZM7.82929 2C7.93985 2.31278 8 2.64936 8 3C8 3.55228 8.44772 4 9 4H15C15.5523 4 16 3.55228 16 3C16 2.64936 16.0602 2.31278 16.1707 2H7.82929ZM0 5C0 2.23858 2.23858 -2.38419e-07 5 -2.38419e-07H19.0227C21.7841 -2.38419e-07 24.0227 2.23858 24.0227 5V35C24.0227 37.7614 21.7841 40 19.0227 40H5C2.23858 40 0 37.7614 0 35V5Z" fill="#CCCCCC"/>
+                                </svg>
+                            </span> iPhone
+                        </li>
+                        <li><span>
+                                <svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color" d="M5 31H35C36.6569 31 38 29.6569 38 28V5.97728C38 4.32043 36.6569 2.97728 35 2.97728H5C3.34315 2.97728 2 4.32043 2 5.97728V28C2 29.6569 3.34315 31 5 31ZM5 33C2.23858 33 0 30.7614 0 28V5.97728C0 3.21586 2.23858 0.977284 5 0.977284H35C37.7614 0.977284 40 3.21586 40 5.97728V28C40 30.7614 37.7614 33 35 33H5ZM34 19C32.896 19 32 18.104 32 17C32 15.896 32.896 15 34 15C35.104 15 36 15.896 36 17C36 18.104 35.104 19 34 19ZM6 20C6 20.5523 5.55228 21 5 21C4.44772 21 4 20.5523 4 20V14C4 13.4477 4.44772 13 5 13C5.55228 13 6 13.4477 6 14V20Z" fill="#CCCCCC"/>
+                                </svg>
+                            </span> iPad
+                        </li>
+                        <li><span>
+                                <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color" d="M42.12 24.8047V1.71875C42.12 0.967812 41.5116 0.359375 40.7606 0.359375H7.22156C6.47109 0.359375 5.86219 0.967812 5.86219 1.71875V24.8047H0.492188V26.3281C0.6675 26.532 1.53984 27.162 3.95297 27.1095L43.5155 27.0936C43.5155 27.0936 46.6036 27.1381 47.6719 26.3281V24.8047H42.12ZM23.9911 1.35922C24.098 1.35922 24.1847 1.44594 24.1847 1.55281C24.1847 1.65969 24.0979 1.74594 23.9911 1.74594C23.8842 1.74594 23.798 1.65969 23.798 1.55281C23.798 1.44594 23.8842 1.35922 23.9911 1.35922ZM7.84266 2.42188H40.1395V22.7656H7.84266V2.42188ZM27.4688 25.0977C27.4688 25.3306 27.2798 25.5195 27.0469 25.5195H20.6719C20.4389 25.5195 20.25 25.3306 20.25 25.0977V24.8281H27.4688V25.0977ZM44.8538 25.6133H43.2244C43.1953 25.6133 43.1719 25.5898 43.1719 25.5603C43.1719 25.5312 43.1953 25.5078 43.2244 25.5078H44.8538C44.8828 25.5078 44.9062 25.5312 44.9062 25.5603C44.9062 25.5898 44.8828 25.6133 44.8538 25.6133Z" fill="#CCCCCC"/>
+                                </svg>
+                        </span> Macbook и iMac
+                        </li>
+                        <li><span>
+                                <svg width="25" height="44" viewBox="0 0 25 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color" d="M5 12C3.34315 12 2 13.3431 2 15V29C2 30.6569 3.34315 32 5 32H19.0227C20.6796 32 22.0227 30.6569 22.0227 29V15C22.0227 13.3431 20.6796 12 19.0227 12H5ZM20 33.9045V39C20 41.7614 17.7614 44 15 44H9C6.23858 44 4 41.7614 4 39V33.9C1.71776 33.4367 0 31.419 0 29V15C0 12.581 1.71776 10.5633 4 10.1V5C4 2.23858 6.23858 0 9 0H15C17.7614 0 20 2.23858 20 5V10.0955C22.2935 10.5499 24.0227 12.573 24.0227 15V29C24.0227 31.427 22.2935 33.4501 20 33.9045ZM18 34H6V39C6 40.6569 7.34315 42 9 42H15C16.6569 42 18 40.6569 18 39V34ZM6 10H18V5C18 3.34315 16.6569 2 15 2H9C7.34315 2 6 3.34315 6 5V10Z" fill="#CCCCCC"/>
+                                </svg>
+                            </span> Watch
+                        </li>
+                        <li><span>
+                                <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color-head" d="M10.5761 1.99997C7.02749 1.99997 3.89627 3.60656 2 6.06123V16.9986C3.89627 19.4514 7.02749 21.058 10.5761 21.058C12.2932 21.058 13.9093 20.6749 15.3406 20.0098V42.0217H21.058V11.529C21.058 6.26705 16.3659 1.99997 10.5761 1.99997Z" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M12.4819 17.2464C14.0599 17.2464 15.3406 18.5271 15.3406 20.1051" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M19.1522 45.8333H17.2464C16.1944 45.8333 15.3406 44.9795 15.3406 43.9275V42.0217H21.058V43.9275C21.058 44.9795 20.2042 45.8333 19.1522 45.8333Z" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M7.24094 9.62314C6.45194 9.62314 5.8116 10.2635 5.8116 11.0525C5.8116 11.8415 6.45194 12.4818 7.24094 12.4818C8.02994 12.4818 8.67029 11.8415 8.67029 11.0525C8.67029 10.2635 8.02994 9.62314 7.24094 9.62314Z" fill="#CCCCCC"/>
+                                <path class="svg-color-head" d="M13.431 6.40616C14.9156 7.05985 16.0991 8.20714 16.7337 9.62124" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M37.2573 1.99997C40.8059 1.99997 43.9371 3.60656 45.8334 6.06123V16.9986C43.9371 19.4514 40.8059 21.058 37.2573 21.058C35.5401 21.058 33.924 20.6749 32.4928 20.0098V42.0217H26.7754V11.529C26.7754 6.26705 31.4674 1.99997 37.2573 1.99997Z" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M35.3515 17.2464C33.7735 17.2464 32.4928 18.5271 32.4928 20.1051" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M28.6812 45.8333H30.587C31.639 45.8333 32.4928 44.9795 32.4928 43.9275V42.0217H26.7754V43.9275C26.7754 44.9795 27.6292 45.8333 28.6812 45.8333Z" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M34.4024 6.40616C32.9178 7.05985 31.7343 8.20714 31.0996 9.62124" stroke="#CCCCCC" stroke-width="2.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="svg-color-head" d="M40.5924 9.62314C39.8034 9.62314 39.1631 10.2635 39.1631 11.0525C39.1631 11.8415 39.8034 12.4818 40.5924 12.4818C41.3814 12.4818 42.0218 11.8415 42.0218 11.0525C42.0218 10.2635 41.3814 9.62314 40.5924 9.62314Z" fill="#CCCCCC"/>
+                                </svg>
+                            </span> Гаджеты
+                        </li>
+                        <li><span>
+                                <svg width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-color" d="M5 2C3.34315 2 2 3.34315 2 5V35C2 36.6569 3.34315 38 5 38H19.0227C20.6796 38 22.0227 36.6569 22.0227 35V5C22.0227 3.34315 20.6796 2 19.0227 2H19C18.4477 2 18 2.44772 18 3C18 4.65685 16.6569 6 15 6H9C7.34315 6 6 4.65685 6 3C6 2.44772 5.55228 2 5 2ZM7.82929 2C7.93985 2.31278 8 2.64936 8 3C8 3.55228 8.44772 4 9 4H15C15.5523 4 16 3.55228 16 3C16 2.64936 16.0602 2.31278 16.1707 2H7.82929ZM0 5C0 2.23858 2.23858 -2.38419e-07 5 -2.38419e-07H19.0227C21.7841 -2.38419e-07 24.0227 2.23858 24.0227 5V35C24.0227 37.7614 21.7841 40 19.0227 40H5C2.23858 40 0 37.7614 0 35V5Z" fill="#CCCCCC"/>
+                                </svg>
+                            </span> Аксессуары
+                        </li>
+                    </ul>
+                    <img src="./assets/images/promax14.png" alt="promax14">
+                </nav>
+            </div>
+            <div class="wrapper-responsive">
+                <nav class="nav-tab">
+                    <a href="#"><img class="nav-tab__logo" src="./assets/icons/logo.svg" alt="logo"></a>
+                    
+                    <div class="nav-tab__input">
+                        <div class="nav-tab__input--search">
+                            <img src="./assets/icons/search-black.svg" alt="search">
+                            <input type="text" placeholder="Поиск по каталогу товаров">
+                        </div>
+                        <a class="nav-tab__input--call" href="tel:+78125619662">+7 812 561 96 62</a>
+                        <a class="nav-tab__input--call-black" href="tel:+78125619662"><img src="./assets/icons/call-black.svg" alt="call"></a>
+                        <a class="nav-tab__input--menu" href="#"><img src="./assets/icons/menu.svg" alt="menu"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+     <!-- main sections started -->
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="intro-cards">
+                        <div class="intro-cards__item">
+                            <img class="intro-cards__item--img" src="./assets/images/iphone.png" alt="iphone">
+                            <div class="intro-content">
+                                <img class="intro-content__img" src="./assets/images/phone-title.png" alt="iphone">
+                                <p class="intro-content__text"><span>от</span> 137 900 ₽</p>
+                                <button class="intro-content__btn">подробнее</button>
+                            </div>
+                        </div>
+                        <div class="intro-cards__item">
+                            <img class="intro-cards__item--img" src="./assets/images/iphone.png" alt="iphone">
+                            <div class="intro-content">
+                                <img class="intro-content__img" src="./assets/images/phone-title.png" alt="iphone">
+                                <p class="intro-content__text"><span>от</span> 137 900 ₽</p>
+                                <button class="intro-content__btn">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="top-iphone">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="top-iphone__title">купить iPhone в Москве</h2>
+                    <h5 class="top-iphone__subtitle">Самое популярное</h5>
+                    <div class="top-iphone__cards">
+                        <div class="top-iphone__cards--up">
+                           <div class="top-iphone__cards--up-left">
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="top-iphone__cards--up-right">
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="top-iphone__cards--middle">
+                            <div class="top-iphone__cards--middle-left">
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="top-iphone__cards--middle-right">
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text iphone-card__text-extra">Ожидается поступление</p>
+                                     <div class="iphone-card__price iphone-card__price-extra">
+                                        Мы можем сообщить вам, когда товар появится в наличии
+                                     </div>
+                                     <button class="iphone-card__btn iphone-card__btn-message">
+                                        сообщить о поступлении
+                                     </button>
+                                 </div>
+                            </div>
+                         </div>
+                         <div class="top-iphone__cards--bottom">
+                            <div class="top-iphone__cards--bottom-left">
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="top-iphone__cards--bottom-right">
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+ 
+                                 <div class="iphone-card">
+                                     <div class="iphone-card__header">
+                                         <div class="iphone-card__header--left">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                             <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                             <span>(14)</span>
+                                         </div>
+                                         <div class="iphone-card__header--right">
+                                             <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                             <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                         </div>
+                                     </div>
+                                     <div class="iphone-card__body">
+                                         <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                         <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                     </div>
+                                     <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                     <div class="iphone-card__price">
+                                         <span>137 900 ₽</span>
+                                         <span>137 900 ₽</span>
+                                     </div>
+                                     <button class="iphone-card__btn">
+                                         <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                     </button>
+                                     <div class="iphone-card__footer">
+                                         <span>Хочу дешевле</span>
+                                         <span>Купить в 1 клик</span>
+                                     </div>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lower-prices">
+                <div class="lower-prices__up">
+                    <div class="container">
+                        <div class="wrapper">
+                            <h2 class="lower-prices__title">Новые модели Айфонов по выгодным ценам</h2>
+                            <ul class="lower-prices__list">
+                                <li>Для тех, кто хочет приобрести новый телефон магазин Istoreapple.ru предлагает:</li>
+                                <li> Низкие цены на все виды устройств, недорогие аксессуары;</li>
+                                <li>Оригинальные подарки бренда;</li>
+                                <li>Новая линейка смартфонов и проверенные старые модели;</li>
+                                <li>Лаконичный дизайн, большой выбор цветов и оттенков;</li>
+                                <li>Все товары в каталоге есть в наличии и доступны для покупки в кредит и рассрочку;</li>
+                                <li>Быстрая доставка по Санкт-Петербургу и области;</li>
+                                <li>Гарантия на все модели телефонов;</li>  
+                                <li>Все способы оплаты!</li>
+                                <li>Товары, представленные на официальном сайте Istoreapple.ru, сертифицированы. Мы занимаемся продажей айфонов с 2013 года. Вы всегда можете прочитать отзывы о покупке наших клиентов, позвонить в магазин и получить консультацию по любой модели Apple.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="lower-prices__banner">
+                    <div class="container">
+                       <div class="wrapper-banner">
+                            <img src="../assets/images/iphone-banner.png" alt="iphone">
+                            <div class="lower-prices__banner--content">
+                                <h2 class="lower-prices__banner--content-title">iPhone 14 Pro Max</h2>
+                                <p class="lower-prices__banner--content-text">по лучшей цене в Москве</p>
+                                <button class="lower-prices__banner--content-btn">подробнее</button>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="lower-prices__down">
+                    <div class="container">
+                        <div class="wrapper">
+                            <h2 class="lower-prices__title">Новые модели Айфонов по выгодным ценам</h2>
+                            <ul class="lower-prices__list">
+                                <li>Для тех, кто хочет приобрести новый телефон магазин Istoreapple.ru предлагает:</li>
+                                <li> Низкие цены на все виды устройств, недорогие аксессуары;</li>
+                                <li>Оригинальные подарки бренда;</li>
+                                <li>Новая линейка смартфонов и проверенные старые модели;</li>
+                                <li>Лаконичный дизайн, большой выбор цветов и оттенков;</li>
+                                <li>Все товары в каталоге есть в наличии и доступны для покупки в кредит и рассрочку;</li>
+                                <li>Быстрая доставка по Санкт-Петербургу и области;</li>
+                                <li>Гарантия на все модели телефонов;</li>  
+                                <li>Все способы оплаты!</li>
+                                <li>Товары, представленные на официальном сайте Istoreapple.ru, сертифицированы. Мы занимаемся продажей айфонов с 2013 года. Вы всегда можете прочитать отзывы о покупке наших клиентов, позвонить в магазин и получить консультацию по любой модели Apple.</li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+        </section>
+        <section id="new-iphone">
+            <div class="container">
+                <div class="wrapper">
+                    <h5 class="new-iphone__subtitle">Новинки</h5>
+
+                    <div class="new-iphone__cards">
+                        <div class="new-iphone__cards--up">
+                           <div class="new-iphone__cards--up-left">
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="new-iphone__cards--up-right">
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+
+                                <div class="iphone-card">
+                                    <div class="iphone-card__header">
+                                        <div class="iphone-card__header--left">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                            <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                            <span>(14)</span>
+                                        </div>
+                                        <div class="iphone-card__header--right">
+                                            <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                            <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                        </div>
+                                    </div>
+                                    <div class="iphone-card__body">
+                                        <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                        <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                    </div>
+                                    <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                    <div class="iphone-card__price">
+                                        <span>137 900 ₽</span>
+                                        <span>137 900 ₽</span>
+                                    </div>
+                                    <button class="iphone-card__btn">
+                                        <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                    </button>
+                                    <div class="iphone-card__footer">
+                                        <span>Хочу дешевле</span>
+                                        <span>Купить в 1 клик</span>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                       
+                        <div class="new-iphone__cards--bottom">
+                            <div class="new-iphone__cards--bottom-left">
+                                    <div class="iphone-card">
+                                        <div class="iphone-card__header">
+                                            <div class="iphone-card__header--left">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                                <span>(14)</span>
+                                            </div>
+                                            <div class="iphone-card__header--right">
+                                                <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                                <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                            </div>
+                                        </div>
+                                        <div class="iphone-card__body">
+                                            <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                            <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                        </div>
+                                        <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                        <div class="iphone-card__price">
+                                            <span>137 900 ₽</span>
+                                            <span>137 900 ₽</span>
+                                        </div>
+                                        <button class="iphone-card__btn">
+                                            <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                        </button>
+                                        <div class="iphone-card__footer">
+                                            <span>Хочу дешевле</span>
+                                            <span>Купить в 1 клик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iphone-card">
+                                        <div class="iphone-card__header">
+                                            <div class="iphone-card__header--left">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                                <span>(14)</span>
+                                            </div>
+                                            <div class="iphone-card__header--right">
+                                                <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                                <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                            </div>
+                                        </div>
+                                        <div class="iphone-card__body">
+                                            <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                            <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                        </div>
+                                        <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                        <div class="iphone-card__price">
+                                            <span>137 900 ₽</span>
+                                            <span>137 900 ₽</span>
+                                        </div>
+                                        <button class="iphone-card__btn">
+                                            <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                        </button>
+                                        <div class="iphone-card__footer">
+                                            <span>Хочу дешевле</span>
+                                            <span>Купить в 1 клик</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="new-iphone__cards--bottom-right">
+                                    <div class="iphone-card">
+                                        <div class="iphone-card__header">
+                                            <div class="iphone-card__header--left">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                                <span>(14)</span>
+                                            </div>
+                                            <div class="iphone-card__header--right">
+                                                <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                                <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                            </div>
+                                        </div>
+                                        <div class="iphone-card__body">
+                                            <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                            <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                        </div>
+                                        <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                        <div class="iphone-card__price">
+                                            <span>137 900 ₽</span>
+                                            <span>137 900 ₽</span>
+                                        </div>
+                                        <button class="iphone-card__btn">
+                                            <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                        </button>
+                                        <div class="iphone-card__footer">
+                                            <span>Хочу дешевле</span>
+                                            <span>Купить в 1 клик</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="iphone-card">
+                                        <div class="iphone-card__header">
+                                            <div class="iphone-card__header--left">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-yellow.svg" alt="star">
+                                                <img src="./assets/icons/iphone-card/star-silver.svg" alt="star">   
+                                                <span>(14)</span>
+                                            </div>
+                                            <div class="iphone-card__header--right">
+                                                <img src="./assets/icons/iphone-card/select.svg" alt="favorite">
+                                                <img src="./assets/icons/iphone-card/rings.svg" alt="rings">
+                                            </div>
+                                        </div>
+                                        <div class="iphone-card__body">
+                                            <h3 class="iphone-card__body--title">Apple iPhone XS Max 256 ГБ золотой</h3>
+                                            <img class="iphone-card__body--img" src="./assets/images/top-iphone.png" alt="iphone">
+                                        </div>
+                                        <p class="iphone-card__text"><span>Есть в наличии</span> <span>Гарантия 1 год</span></p>
+                                        <div class="iphone-card__price">
+                                            <span>137 900 ₽</span>
+                                            <span>137 900 ₽</span>
+                                        </div>
+                                        <button class="iphone-card__btn">
+                                            <img src="./assets/icons/iphone-card/cart-plus.svg" alt="cart"> в корзине
+                                        </button>
+                                        <div class="iphone-card__footer">
+                                            <span>Хочу дешевле</span>
+                                            <span>Купить в 1 клик</span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="our-advantages">
+            <div class="container">
+                <div class="wrapper">
+                    <h2 class="our-advantages__title">Наши преимущества</h2>
+                    <div class="our-advantages__cards">
+                      
+                        <div class="advantages-card gradient-discount">
+                            <img class="advantages-card__img" src="./assets/images/advantages/discount.png" alt="discount">
+                            <div class="advantages-card__content">
+                                <div class="advantages-card__content--body">
+                                    <h4 class="advantages-card__content--body-title">Акции и подарки</h4>
+                                    <p class="advantages-card__content--body-text">Постоянные акции, бонусы и скидки. Покупайте технику Apple по самым выгодным ценам</p>
+                                </div>
+                                <button class="advantages-card__content--btn">подробнее</button>
+                            </div>
+                        </div>
+                        <div class="advantages-card gradient-delivery">
+                            <img class="advantages-card__img" src="./assets/images/advantages/delivery.png" alt="delivery">
+                            <div class="advantages-card__content">
+                                <div class="advantages-card__content--body">
+                                    <h4 class="advantages-card__content--body-title">Доставим
+                                        за 3 часа</h4>
+                                    <p class="advantages-card__content--body-text">Быстрая и бесплатная доставка по Москве. Доставим за 3 часа в день заказа. Также доступна быстрая доставка по всей России или самовывоз</p>
+                                </div>
+                                <button class="advantages-card__content--btn">подробнее</button>
+                            </div>
+                        </div>
+                        <div class="advantages-card gradient-wallet">
+                            <img class="advantages-card__img" src="./assets/images/advantages/wallet.png" alt="wallet">
+                            <div class="advantages-card__content">
+                                <div class="advantages-card__content--body">
+                                    <h4 class="advantages-card__content--body-title">Удобные способы оплаты</h4>
+                                    <p class="advantages-card__content--body-text">Наличными или картой при получении, оплата на сайте или в кредит</p>
+                                </div>
+                                <button class="advantages-card__content--btn">подробнее</button>
+                            </div>
+                        </div>
+                        <div class="advantages-card gradient-building">
+                            <img class="advantages-card__img" src="./assets/images/advantages/building.png" alt="building">
+                            <div class="advantages-card__content">
+                                <div class="advantages-card__content--body">
+                                    <h4 class="advantages-card__content--body-title">Покупка в кредит</h4>
+                                    <p class="advantages-card__content--body-text">Получите самое выгодное кредитное предложение от более чем 30 ведущих банков страны</p>
+                                </div>
+                                <button class="advantages-card__content--btn">подробнее</button>
+                            </div>
+                        </div>
+                        <div class="advantages-card gradient-approval">
+                            <img class="advantages-card__img" src="./assets/images/advantages/approval.png" alt="approval">
+                            <div class="advantages-card__content">
+                                <div class="advantages-card__content--body">
+                                    <h4 class="advantages-card__content--body-title">Гарантия</h4>
+                                    <p class="advantages-card__content--body-text">Все товары, представленные в нашем сайте, имеют гарантию
+                                        от нашего магазина или компании Apple</p>
+                                </div>
+                                <button class="advantages-card__content--btn">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subscribe">
+            <div class="container">
+                <div class="wrapper">
+                    <img class="subscribe-img" src="./assets/images/phone-subscribe.png" alt="phone">
+                    <div class="subscribe-content">
+                        <h2 class="subscribe-content__title">Подписка на рассылку акций!</h2>
+                        <p class="subscribe-content__text">Подпишитесь на рассылку, чтобы узнавать о всех акциях первым</p>
+                        <div class="subscribe-content__form">
+                            <div class="subscribe-content__form--header">
+                                <h4 class="subscribe-content__form--title">Скидка 10%</h4>
+                                <p class="subscribe-content__form--text">на первую покупку за подписку</p>
+                            </div>
+                            <form action="http://echo.htmlacademy.ru" method="POST">
+                                <input class="subscribe-content__form--input" type="tel" name="tel_number" placeholder="+ 7" aria-label="Enter phone number" id="tel" required>
+                                <button class="subscribe-content__form--btn" type="submit">
+                                    подписаться
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- end main sections -->
+
+    <!-- footer section started -->
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div class="footer-up">
+                    <div class="footer-left">
+                        <img class="footer-left__img" src="./assets/icons/footer/logo.svg" alt="logo">
+                        <div class="footer-left__content">
+                            <p class="footer-left__content--right">© 2013-2022<span>Продажа iPhone в МСК</span></p>
+                            <p class="footer-left__content--text">*Сайт не является публичной оффертой. Вся информация, указанная на сайте носит информационный характер.</p>
+                        </div>
+                    </div>
+                    <ul class="footer-list">
+                        <li><a class="footer-list__link" href="#">Гарантия</a></li>
+                        <li><a class="footer-list__link" href="#">Политика возврата</a></li>
+                        <li><a class="footer-list__link" href="#">Кредит</a></li>
+                        <li><a class="footer-list__link" href="#">Доставка и оплата</a></li>
+                        <li><a class="footer-list__link" href="#">Отзывы</a></li>
+                        <li><a class="footer-list__link" href="#">Контакты</a></li>
+                        <li><a class="footer-list__link" href="#">Политика конфеденциальности</a></li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li><a class="footer-list__link" href="#">iPhone</a></li>
+                        <li><a class="footer-list__link" href="#">iPad</a></li>
+                        <li><a class="footer-list__link" href="#">Macbook и iMac</a></li>
+                        <li><a class="footer-list__link" href="#">Watch</a></li>
+                        <li><a class="footer-list__link" href="#">Аксессуары</a></li>
+                        <li><a class="footer-list__link" href="#">Акции</a></li>
+                    </ul>
+                    <div class="footer-address">
+                        <div class="footer-address__connection">
+                            <p class="footer-address__connection--tell">+7 812 704 86 97</p>
+                            <p class="footer-address__connection--text">Бесплатная консультация <span>С 10:00 до 21:00, без выходных</span></p>
+                            <div class="footer-address__connection--socials">
+                                <span>Заказать звонок</span><img src="./assets/icons//socials/whatsapp.svg" alt="whatsapp"><img src="./assets/icons//socials/telegram.svg" alt="telegram"><img src="./assets/icons//socials/vk.svg" alt="vk">
+                            </div>
+                        </div>
+                        <p class="order-ring">Заказать звонок</p>
+                        <div class="footer-address__direction">
+                            <p>Москва,  ул Барклая 8</p>
+                            <p>Москва,  ул Барклая 8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__item">
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="catalog" fill-rule="evenodd" clip-rule="evenodd" d="M0.199997 8.8C0.199997 8.37566 0.368568 7.96869 0.668626 7.66863C0.968684 7.36857 1.37565 7.2 1.8 7.2H18.2928C18.7171 7.2 19.1241 7.36857 19.4242 7.66863C19.7242 7.96869 19.8928 8.37566 19.8928 8.8C19.8928 9.22435 19.7242 9.63132 19.4242 9.93137C19.1241 10.2314 18.7171 10.4 18.2928 10.4H1.8C1.37565 10.4 0.968684 10.2314 0.668626 9.93137C0.368568 9.63132 0.199997 9.22435 0.199997 8.8ZM0.199997 2.4C0.199997 1.97566 0.368568 1.56869 0.668626 1.26863C0.968684 0.968574 1.37565 0.800003 1.8 0.800003H24.2C24.6243 0.800003 25.0313 0.968574 25.3314 1.26863C25.6314 1.56869 25.8 1.97566 25.8 2.4C25.8 2.82435 25.6314 3.23132 25.3314 3.53137C25.0313 3.83143 24.6243 4 24.2 4H1.8C1.37565 4 0.968684 3.83143 0.668626 3.53137C0.368568 3.23132 0.199997 2.82435 0.199997 2.4ZM0.199997 15.2C0.199997 14.7757 0.368568 14.3687 0.668626 14.0686C0.968684 13.7686 1.37565 13.6 1.8 13.6H24.2C24.6243 13.6 25.0313 13.7686 25.3314 14.0686C25.6314 14.3687 25.8 14.7757 25.8 15.2C25.8 15.6243 25.6314 16.0313 25.3314 16.3314C25.0313 16.6314 24.6243 16.8 24.2 16.8H1.8C1.37565 16.8 0.968684 16.6314 0.668626 16.3314C0.368568 16.0313 0.199997 15.6243 0.199997 15.2ZM0.199997 21.6C0.199997 21.1757 0.368568 20.7687 0.668626 20.4686C0.968684 20.1686 1.37565 20 1.8 20H18.2928C18.7171 20 19.1241 20.1686 19.4242 20.4686C19.7242 20.7687 19.8928 21.1757 19.8928 21.6C19.8928 22.0243 19.7242 22.4313 19.4242 22.7314C19.1241 23.0314 18.7171 23.2 18.2928 23.2H1.8C1.37565 23.2 0.968684 23.0314 0.668626 22.7314C0.368568 22.4313 0.199997 22.0243 0.199997 21.6Z" fill="#706E6E"/>
+                        </svg>
+                        <span>каталог</span>
+                    </div>
+                    <div class="footer-bottom__item">
+                        <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="bag" d="M4.66667 0.666504H19.3333C19.5403 0.666504 19.7445 0.714697 19.9296 0.807267C20.1148 0.899838 20.2758 1.03424 20.4 1.19984L24 5.99984V25.9998C24 26.3535 23.8595 26.6926 23.6095 26.9426C23.3594 27.1927 23.0203 27.3332 22.6667 27.3332H1.33333C0.979711 27.3332 0.640573 27.1927 0.390524 26.9426C0.140476 26.6926 0 26.3535 0 25.9998V5.99984L3.6 1.19984C3.7242 1.03424 3.88524 0.899838 4.07038 0.807267C4.25552 0.714697 4.45967 0.666504 4.66667 0.666504ZM20.6667 5.99984L18.6667 3.33317H5.33333L3.33333 5.99984H20.6667ZM8 11.3332H5.33333V13.9998C5.33333 15.7679 6.03571 17.4636 7.28596 18.7139C8.5362 19.9641 10.2319 20.6665 12 20.6665C13.7681 20.6665 15.4638 19.9641 16.714 18.7139C17.9643 17.4636 18.6667 15.7679 18.6667 13.9998V11.3332H16V13.9998C16 15.0607 15.5786 16.0781 14.8284 16.8283C14.0783 17.5784 13.0609 17.9998 12 17.9998C10.9391 17.9998 9.92172 17.5784 9.17157 16.8283C8.42143 16.0781 8 15.0607 8 13.9998V11.3332Z" fill="#706E6E"/>
+                        </svg>
+                        <span>корзина</span>
+                    </div>
+                    <div class="footer-bottom__item">
+                        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="love" d="M9.00008 2.3335C4.95008 2.3335 1.66675 5.61683 1.66675 9.66683C1.66675 17.0002 10.3334 23.6668 15.0001 25.2175C19.6667 23.6668 28.3334 17.0002 28.3334 9.66683C28.3334 5.61683 25.0501 2.3335 21.0001 2.3335C18.5201 2.3335 16.3267 3.56483 15.0001 5.4495C14.3239 4.4863 13.4255 3.70022 12.3811 3.15782C11.3367 2.61542 10.1769 2.33267 9.00008 2.3335Z" stroke="#706E6E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>избранное</span>
+                    </div>
+                    <div class="footer-bottom__item">
+                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="rings" fill-rule="evenodd" clip-rule="evenodd" d="M4.27725 17.5869C5.83827 18.6833 7.69897 19.2727 9.60659 19.2749C10.1944 20.8756 11.2095 22.2847 12.5417 23.3491C13.8739 24.4136 15.4723 25.0927 17.1632 25.3128C18.8542 25.5329 20.5731 25.2855 22.1334 24.5975C23.6937 23.9095 25.0357 22.8072 26.0137 21.4103C26.9916 20.0134 27.5682 18.3753 27.6808 16.6738C27.7934 14.9723 27.4377 13.2724 26.6523 11.7588C25.8669 10.2452 24.6819 8.97573 23.2259 8.08815C21.7698 7.20058 20.0985 6.72886 18.3933 6.72422C17.8882 5.34932 17.0665 4.11261 15.9949 3.1141C14.9232 2.1156 13.6316 1.38333 12.2245 0.976539C10.8174 0.569746 9.33426 0.499844 7.89512 0.772488C6.45598 1.04513 5.10121 1.65266 3.94039 2.54595C2.77957 3.43924 1.84528 4.59319 1.21311 5.91449C0.580935 7.23578 0.268616 8.68732 0.301413 10.1517C0.334209 11.6161 0.711202 13.0522 1.4019 14.3438C2.09259 15.6355 3.0776 16.7465 4.27725 17.5869V17.5869ZM5.80659 15.4002C6.76434 16.0731 7.88308 16.4807 9.04925 16.5816C8.92894 14.4897 9.51909 12.4185 10.7239 10.7042C11.9231 8.98606 13.6677 7.72355 15.6746 7.12155C15.2421 6.19523 14.6023 5.38079 13.8047 4.74121C13.0072 4.10162 12.0732 3.65403 11.0751 3.43304C10.0769 3.21205 9.04131 3.22358 8.04832 3.46674C7.05533 3.70989 6.13156 4.17817 5.34845 4.83535C4.56534 5.49253 3.94386 6.32101 3.53206 7.25673C3.12026 8.19245 2.92918 9.21035 2.9736 10.2317C3.01801 11.2531 3.29673 12.2505 3.7882 13.147C4.27966 14.0434 4.97071 14.8148 5.80792 15.4016L5.80659 15.4002ZM22.1933 10.5962C21.2353 9.92382 20.1166 9.51673 18.9506 9.41622C19.0709 11.5081 18.4808 13.5793 17.2759 15.2936C16.0767 17.0117 14.3322 18.2742 12.3253 18.8762C12.7578 19.8025 13.3976 20.617 14.1951 21.2566C14.9927 21.8961 15.9266 22.3437 16.9248 22.5647C17.9229 22.7857 18.9585 22.7742 19.9515 22.531C20.9445 22.2879 21.8683 21.8196 22.6514 21.1624C23.4345 20.5052 24.056 19.6768 24.4678 18.741C24.8796 17.8053 25.0707 16.7874 25.0262 15.7661C24.9818 14.7447 24.7031 13.7472 24.2116 12.8508C23.7202 11.9543 23.0291 11.1829 22.1919 10.5962H22.1933Z" fill="#706E6E"/>
+                        </svg>
+                        <span>сравнение</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+</body>
+
+<!-- settings slick slider -->
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<!-- main js file -->
+<script src="./js/script.js"></script>
+
+</html>

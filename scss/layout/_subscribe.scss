@@ -1,0 +1,230 @@
+
+#subscribe{
+    background-color: $light-grey;
+    width: 100%;
+
+    .wrapper{
+        padding: 40px 0px;
+        display: flex;
+        column-gap: 80px;
+    }
+    .subscribe-content{
+        &__title{
+            @include font-style(48px, $ff-SFProDisplayBold, $color-black);
+            max-width: 421px;
+            margin-bottom: 8px;
+        }
+        &__text{
+            @include font-style(24px, $ff-SFProDisplayRegular, $color-text);
+            max-width: 454px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        &__form{
+            padding: 16px 32px 32px;
+            border-radius: 16px;
+            background-image: $gradient-form;
+            &--title{
+                @include font-style(40px, $ff-SFProDisplayBold, $color-white);
+                margin-bottom: 4px;
+            }
+            &--text{
+                @include font-style(20px, $ff-SFProDisplayMedium, $color-white);
+                margin-bottom: 16px;
+            }
+            form{
+                display: flex;
+                align-items: center;
+                column-gap: 16px;
+            }
+            &--input{
+                background-color: $color-white;
+                max-width: 246px;
+                border-radius: 8px;
+                padding: 13px 24px 14px;
+                @include font-style(24px, $ff-SFProDisplayRegular, $color-black);
+                &::placeholder{
+                    @include font-style(24px, $ff-SFProDisplayRegular, $dark-grey);
+                }
+            }
+            &--btn{
+                border-radius: 8px;
+                min-width: 160px;
+                @include font-style(16px, $ff-SFProDisplayMedium, $color-text);
+                padding: 18.5px 0px;
+                transition: all 0.3s ease;
+                background-color: $bg-btn;
+                &:hover{
+                    background-color: $prime;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+   
+    #subscribe{
+        background-color: $light-grey;
+        width: 100%;
+
+        .wrapper{
+            padding: 24px 0px 53px;
+            display: flex;
+            column-gap: 32px;
+        }
+        .subscribe-img{
+            width: 224.56px;
+            height: 173px;
+        }
+        .subscribe-content{
+            &__title{
+                @include font-style(32px, $ff-SFProDisplayBold, $color-black);
+                max-width: 339px;
+                margin-bottom: 8px;
+            }
+            &__text{
+                @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+                max-width: 300px;
+                line-height: 19px;
+                margin-bottom: 25px;
+            }
+            &__form{
+                padding: 0;
+                border-radius: 0;
+                background-image: none;
+                &--header{
+                    background-image: $gradient-form;
+                    width: 279px;
+                    border-radius: 16px;
+                    padding: 8px 16px;
+                    margin-bottom: 16px;
+                }
+                &--title{
+                    @include font-style(20px, $ff-SFProDisplayBold, $color-white);
+                    margin-bottom: 4px;
+                }
+                &--text{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    margin-bottom: 0px;
+                }
+                form{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                }
+                &--input{
+                    background-color: $color-white;
+                    max-width: 246px;
+                    border-radius: 8px;
+                    padding: 13px 24px 14px;
+                    @include font-style(24px, $ff-SFProDisplayRegular, $color-black);
+                    border: 1px solid $border-input;
+                    &::placeholder{
+                        @include font-style(24px, $ff-SFProDisplayRegular, $dark-grey);
+                    }
+                }
+                &--btn{
+                    border-radius: 8px;
+                    min-width: 160px;
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-text);
+                    padding: 18.5px 0px;
+                    transition: all 0.3s ease;
+                    background-color: $bg-btn;
+                    &:hover{
+                        background-color: $prime;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media only screen and (max-width: 320px)  {
+   
+    #subscribe{
+        background-color: $light-grey;
+        width: 100%;
+
+        .wrapper{
+            padding: 24px 0px 24px;
+            display: flex;
+            column-gap: 32px;
+        }
+        .subscribe-img{
+            width: 224.56px;
+            height: 173px;
+            display: none;
+        }
+        .subscribe-content{
+            &__title{
+                @include font-style(24px, $ff-SFProDisplayBold, $color-black);
+                max-width: 228px;
+                margin-bottom: 8px;
+                
+            }
+            &__text{
+                @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+                max-width: 300px;
+                line-height: 16px;
+                margin-bottom: 8px;
+            }
+            &__form{
+                padding: 0;
+                border-radius: 0;
+                background-image: none;
+                &--header{
+                    background-image: $gradient-form;
+                    width: 288px;
+                    border-radius: 8px;
+                    padding: 8px 16px;
+                    margin-bottom: 8px;
+                }
+                &--title{
+                    @include font-style(16px, $ff-SFProDisplayBold, $color-white);
+                    margin-bottom: 4px;
+                }
+                &--text{
+                    @include font-style(14px, $ff-SFProDisplayMedium, $color-white);
+                    margin-bottom: 0px;
+                }
+                form{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    column-gap: 0px;
+                    row-gap: 8px;
+                    
+                }
+                &--input{
+                    background-color: $color-white;
+                 
+                    max-width: 288px;
+                    border-radius: 8px;
+                    padding: 13px 24px 14px;
+                    @include font-style(24px, $ff-SFProDisplayRegular, $color-black);
+                    border: 1px solid $border-input;
+                    &::placeholder{
+                        @include font-style(24px, $ff-SFProDisplayRegular, $dark-grey);
+                    }
+                }
+                &--btn{
+                    border-radius: 8px;
+                    min-width: 160px;
+                    width: 288px;
+                    
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-text);
+                    padding: 18.5px 0px;
+                    transition: all 0.3s ease;
+                    background-color: $bg-btn;
+                    &:hover{
+                        background-color: $prime;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    } 
+}

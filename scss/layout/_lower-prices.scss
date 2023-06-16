@@ -1,0 +1,189 @@
+
+
+#lower-prices{
+    width: 100%;
+    .wrapper{
+        padding: 32px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lower-prices__title{
+        @include font-style(32px, $ff-SFProDisplayBold, $color-black);
+        margin-bottom: 22px;
+    }
+    .lower-prices__list{
+        @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+        line-height: 19px;
+        li{
+            margin-bottom: 2px;
+        }
+        li:first-child{
+            margin-bottom: 15px;
+        }
+    }
+
+    .lower-prices__banner{
+        background-color: #000000;
+        height: 360px;
+        .wrapper-banner{
+            display: flex;
+            align-items: center;
+            column-gap: 88px;
+        }
+        .lower-prices__banner--content{
+            display: flex;
+            flex-direction: column;
+            &-title{
+                @include font-style(56px, $ff-SFProDisplayBold, $color-white);
+                margin-bottom: 16px;
+            }
+            &-text{
+                @include font-style(24px, $ff-SFProDisplayMedium, $color-white);
+                margin-bottom: 24px;
+            }
+            &-btn{
+                @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                background-color: $prime;
+                border-radius: 8px;
+                width: 160px;
+                height: 56px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: $light-prime;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    #lower-prices{
+        width: 100%;
+        .wrapper{
+            padding: 32px 0px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .lower-prices__title{
+            @include font-style(32px, $ff-SFProDisplayBold, $color-black);
+            margin-bottom: 16px;
+        }
+        .lower-prices__list{
+            @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+          
+            line-height: 19px;
+            li{
+                margin-bottom: 2px;
+            }
+            li:first-child{
+                margin-bottom: 15px;
+            }
+        }
+    
+        .lower-prices__banner{
+            background-color: #000000;
+            height: 276px;
+            .wrapper-banner{
+                display: flex;
+                align-items: center;
+                column-gap: 72px;
+                img{
+                    width: 150px;
+                    height: 276px;
+                }
+            }
+            .lower-prices__banner--content{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                    @include font-style(32px, $ff-SFProDisplayBold, $color-white);
+                    margin-bottom: 8px;
+                }
+                &-text{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    margin-bottom: 16px;
+                }
+                &-btn{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    background-color: $prime;
+                    border-radius: 8px;
+                    width: 160px;
+                    height: 56px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: $light-prime;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 320px)  {
+    #lower-prices{
+        width: 100%;
+        .wrapper{
+            padding: 16px 0px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .lower-prices__title{
+            @include font-style(24px, $ff-SFProDisplayBold, $color-black);
+            line-height: 28px;
+            margin-bottom: 8px;
+        }
+        .lower-prices__list{
+            @include font-style(16px, $ff-SFProDisplayRegular, $color-text);
+            line-height: 19px;
+            li{
+                margin-bottom: 2px;
+            }
+            li:first-child{
+                margin-bottom: 15px;
+            }
+        }
+    
+        .lower-prices__banner{
+            background-color: #000000;
+            height: 163px;
+            .wrapper-banner{
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+                img{
+                    width: 65px;
+                    height: 163px;
+                }
+            }
+            .lower-prices__banner--content{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                    @include font-style(20px, $ff-SFProDisplayBold, $color-white);
+                    margin-bottom: 4px;
+                }
+                &-text{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    margin-bottom: 16px;
+                }
+                &-btn{
+                    @include font-style(16px, $ff-SFProDisplayMedium, $color-white);
+                    background-color: $prime;
+                    border-radius: 8px;
+                    width: 160px;
+                    height: 40px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: $light-prime;
+                    }
+                }
+            }
+        }
+    }
+}
