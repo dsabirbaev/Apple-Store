@@ -451,9 +451,6 @@ header .nav-top__city .dropdown .select {
           column-gap: 4px;
   cursor: pointer;
 }
-header .nav-top__city .dropdown .select:hover {
-  background-color: #F9F9F9;
-}
 header .nav-top__city .dropdown .menu {
   display: none;
   position: absolute;

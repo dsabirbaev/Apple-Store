@@ -29,9 +29,7 @@ header{
                     color: $prime;
                     column-gap: 4px;
                     cursor: pointer;
-                    &:hover{
-                        background-color: $light-grey;
-                    }
+                    
                 }
                 .menu{
                     display: none;
