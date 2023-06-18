@@ -6,7 +6,8 @@ header{
     position: fixed;
     top: 0;
     z-index: 99999;
-    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     .wrapper{
         display: flex;
         flex-direction: column;

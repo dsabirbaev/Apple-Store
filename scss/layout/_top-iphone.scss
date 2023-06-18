@@ -123,6 +123,24 @@
                         margin-bottom: 22px;
                     }
                 }
+                &__message{
+                    background-color: transparent;
+                    border-radius: 8px;
+                    padding: 16px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 8px;
+                    transition: all 0.3s ease;
+                    margin-bottom: 8px;
+                    @include font-style(18px, $ff-SFProDisplayMedium, $prime);
+                    border: 1px solid $prime;
+                        &:hover{
+                            color: $color-white;
+                            border-color: transparent;
+                            background-color: $btn-green;
+                        }
+                }
                 &__btn{
                     background-color: $prime;
                     border-radius: 8px;
@@ -134,19 +152,27 @@
                     transition: all 0.3s ease;
                     margin-bottom: 8px;
                     @include font-style(18px, $ff-SFProDisplayMedium, $color-white);
+                    position: relative;
                     &:hover{
                         background-color: $btn-green;
                     }
-                    &-message{
-                        background-color: transparent;
-                        color: $prime;
-                        border: 1px solid $prime;
-                        &:hover{
-                            color: $color-white;
-                            border-color: transparent;
-                        }
+                    &::before{
+                        content: "";
+                        background-image: url(../assets/icons/iphone-card/cart-plus.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        top: 50%;
+                        left: 58px;
+                        transform: translateY(-50%);
+                    }
+                    &:hover::before{
+                        background-image: url(../assets/icons/iphone-card/cart-check.svg);
                     }
                 }
+
                 &__footer{
                     display: flex;
                     align-items: center;
