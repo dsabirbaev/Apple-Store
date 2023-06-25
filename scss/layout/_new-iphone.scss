@@ -112,8 +112,24 @@
                     transition: all 0.3s ease;
                     margin-bottom: 8px;
                     @include font-style(18px, $ff-SFProDisplayMedium, $color-white);
+                    position: relative;
                     &:hover{
                         background-color: $btn-green;
+                    }
+                    &::before{
+                        content: "";
+                        background-image: url(../assets/icons/iphone-card/cart-plus.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        top: 50%;
+                        left: 58px;
+                        transform: translateY(-50%);
+                    }
+                    &:hover::before{
+                        background-image: url(../assets/icons/iphone-card/cart-check.svg);
                     }
                    
                 }

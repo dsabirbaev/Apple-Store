@@ -2644,9 +2644,26 @@ header .nav-devices__list li:hover .svg-color-head {
   font-family: "SFProDisplay-Medium", sans-serif;
   color: #FFFFFF;
   text-transform: none;
+  position: relative;
 }
 #new-iphone .wrapper .new-iphone__cards .iphone-card__btn:hover {
   background-color: #6FD91C;
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__btn::before {
+  content: "";
+  background-image: url(../assets/icons/iphone-card/cart-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 58px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#new-iphone .wrapper .new-iphone__cards .iphone-card__btn:hover::before {
+  background-image: url(../assets/icons/iphone-card/cart-check.svg);
 }
 #new-iphone .wrapper .new-iphone__cards .iphone-card__footer {
   display: -webkit-box;
